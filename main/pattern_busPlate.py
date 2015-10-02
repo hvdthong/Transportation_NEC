@@ -13,7 +13,7 @@ def pattern_busPlate(string):
     #take all the tokens of string and detect the bus plate number 
     
     split_str = string.split()
-    #print (string)
+    # print (string)
     
     list_busPlate = []
     for text in split_str:
@@ -25,12 +25,12 @@ def pattern_busPlate(string):
                     index_ = text.index('(')
                     text = text[:index_]
                     
-                    if (text not in list_busPlate):
+                    if text not in list_busPlate:
                         list_busPlate.append(text)
                 else:
                     list_busPlate.append(text)
               
-    #print (list_busPlate)
+    # print (list_busPlate)
     
     return list_busPlate
 
