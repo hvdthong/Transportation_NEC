@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a7ada62-02aa-484a-859c-bf02a699c53d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/clf_CRF.py" afterPath="$PROJECT_DIR$/CRF_labeling/clf_CRF.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" afterPath="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/load_crf.py" afterPath="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
     </list>
     <ignored path="Transportation_NEC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="feature_crf_all.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="feature_crf_all.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5706085">
-              <caret line="342" column="33" selection-start-line="342" selection-start-column="33" selection-end-line="342" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="440" column="18" selection-start-line="440" selection-start-column="18" selection-end-line="440" selection-end-column="18" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
               </folding>
@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clf_CRF.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="clf_CRF.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CRF_labeling/clf_CRF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.9411765">
+              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_token_crf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="24" />
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -100,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="366" column="20" selection-start-line="366" selection-start-column="20" selection-end-line="366" selection-end-column="20" />
+              <caret line="424" column="42" selection-start-line="424" selection-start-column="42" selection-end-line="424" selection-end-column="42" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -112,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <caret line="756" column="34" selection-start-line="756" selection-start-column="17" selection-end-line="756" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -177,13 +177,13 @@
         <option value="$PROJECT_DIR$/feature_selection/pearson_correlation.py" />
         <option value="$PROJECT_DIR$/feature_selection/asdfasdf.py" />
         <option value="$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/clf_CRF.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/create_lbl.py" />
         <option value="$PROJECT_DIR$/../Research_Group/feature_selection/pearson_correlation.py" />
         <option value="$PROJECT_DIR$/main/pattern_busPlate.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/feature_token_crf.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" />
+        <option value="$PROJECT_DIR$/CRF_labeling/clf_CRF.py" />
       </list>
     </option>
   </component>
@@ -542,10 +542,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.feature_crf_all" />
-        <item index="1" class="java.lang.String" itemvalue="Python.load_crf" />
-        <item index="2" class="java.lang.String" itemvalue="Python.feature_token_crf" />
-        <item index="3" class="java.lang.String" itemvalue="Python.create_lbl" />
-        <item index="4" class="java.lang.String" itemvalue="Python.clf_CRF" />
+        <item index="1" class="java.lang.String" itemvalue="Python.clf_CRF" />
+        <item index="2" class="java.lang.String" itemvalue="Python.load_crf" />
+        <item index="3" class="java.lang.String" itemvalue="Python.feature_token_crf" />
+        <item index="4" class="java.lang.String" itemvalue="Python.create_lbl" />
       </list>
     </recent_temporary>
   </component>
@@ -576,7 +576,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1130064" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
@@ -585,11 +585,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1444563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35287845" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="561" y="57" width="798" height="925" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37420043" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="561" y="57" width="798" height="925" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946696" sideWeight="0.49429038" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31962025" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12260128" sideWeight="0.5213793" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259177" sideWeight="0.49583334" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3259177" sideWeight="0.49583334" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -665,7 +665,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="340" />
+      <option name="time" value="342" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -997,14 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/clf_CRF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/gt_crf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1013,18 +1005,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_token_crf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="24" />
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1032,20 +1016,36 @@
     <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="366" column="20" selection-start-line="366" selection-start-column="20" selection-end-line="366" selection-end-column="20" />
+          <caret line="424" column="42" selection-start-line="424" selection-start-column="42" selection-end-line="424" selection-end-column="42" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="756" column="34" selection-start-line="756" selection-start-column="17" selection-end-line="756" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5706085">
-          <caret line="342" column="33" selection-start-line="342" selection-start-column="33" selection-end-line="342" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="440" column="18" selection-start-line="440" selection-start-column="18" selection-end-line="440" selection-end-column="18" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/clf_CRF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9411765">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
