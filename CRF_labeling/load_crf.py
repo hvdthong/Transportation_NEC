@@ -5,6 +5,7 @@ from nltk.tokenize import word_tokenize
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from classification_busService.ftr_bussvc_extraction import is_int
+from CRF_labeling.feature_token_crf import token_isAllCharacter
 
 
 def check_label_crf(list_line):
@@ -46,8 +47,6 @@ def check_svc_bef_aft(list_line, command):
 
         for k in range(0, len(split_second)):
             if command == 'before_svc':
-                # if (i == 150 and k == 29):
-                #     print 'testing'
                 if int(split_second[k]) == 1:  # mean bus svc
                     if command == 'before_svc':
                         if k > 0:  # bus svc doesn't appear at the first position of sentences
@@ -84,6 +83,7 @@ def check_svc_bef_aft(list_line, command):
     # plt.axis("off")
     # plt.show()
 
+
 def RepresentsInt(s):
     try:
         int(s)
@@ -91,10 +91,9 @@ def RepresentsInt(s):
     except ValueError:
         return False
 
+
 #################################################################################################
 #################################################################################################
-
-
 def connect_token(string):
     split_str = string.split()
     if len(split_str) > 1:
@@ -250,8 +249,156 @@ def take_road_busstop(list_line, command):
             print i, value
 
 
+######################################################################################################
+######################################################################################################
+def load_all_dic_token_bef_road_busstop(list_line, command):
+    # load all the word of token before and after labeling, note that we do not consider if this token is a
+    # number. In fact, we only consider if token contain all characters
+    # Using only for "road" and "busstop"
+
+    text = ''
+    for i in range(0, len(list_line), 3):
+        split_first = 0
+        split_second = 0
+
+        if i % 3 == 0:
+            split_first = list_line[i].strip().split('\t')
+        j = i + 1
+        if j % 3 == 1:
+            split_second = list_line[j].strip().split('\t')
+
+        k = 0
+        while True:
+            if k >= len(split_second):
+                break
+
+            if command == 'road':  # get the token before labeling for road
+                try:
+                    if int(split_second[k]) == 2:  # detect this is a road => get the token before it
+                        if k > 0:
+                            token_bef = split_first[k - 1].lower()
+                            if token_isAllCharacter(token_bef) is True:
+                                text = text + connect_token(token_bef) + ' '  # take the word before
+
+                        while True:
+                            k += 1
+                            if k == len(split_second):
+                                break
+                            else:
+                                if int(split_second[k]) != 2:
+                                    break
+                    else:
+                        k += 1
+                except ValueError:
+                    k += 1
+
+            if command == 'busstop':  # get the token before labeling for road
+                try:
+                    if int(split_second[k]) == 3:  # detect this is a road => get the token before it
+                        if k > 0:
+                            token_bef = split_first[k - 1].lower()
+                            if token_isAllCharacter(token_bef) is True:
+                                text = text + connect_token(token_bef) + ' '  # take the word before
+
+                        while True:
+                            k += 1
+                            if k == len(split_second):
+                                break
+                            else:
+                                if int(split_second[k]) != 3:
+                                    break
+                    else:
+                        k += 1
+                except ValueError:
+                    k += 1
+
+    fdist = FreqDist()
+    tokens = word_tokenize(str(text))
+    fdist.update(tokens)
+    for value in fdist.most_common(len(fdist)):
+        print value[0], '\t', value[1]
+
+    for value in fdist.most_common(len(fdist)):
+        print value[0]
+    print len(fdist)
+
+
+def load_all_dic_token_bef_aft_svc(list_line, command):
+    # loading all token before and after for bus service
+    # Using only for bus service, because for bus service we not only focus on the token before, but also the token
+    # after labeling
+    text = ''
+    for i in range(0, len(list_line), 3):
+        split_first = 0
+        split_second = 0
+
+        if i % 3 == 0:
+            split_first = list_line[i].strip().split('\t')
+        j = i + 1
+        if j % 3 == 1:
+            split_second = list_line[j].strip().split('\t')
+
+        k = 0
+        while True:
+            if k >= len(split_second):
+                break
+
+            if command == 'bef_svc':  # get the token before labeling for bus svc
+                try:
+                    if int(split_second[k]) == 1:  # detect this is a svc => get the token before it
+                        if k > 0:
+                            token_bef = split_first[k - 1].lower()
+                            if token_isAllCharacter(token_bef) is True:
+                                text = text + connect_token(token_bef) + ' '  # take the word before
+
+                        while True:
+                            k += 1
+                            if k == len(split_second):
+                                break
+                            else:
+                                if int(split_second[k]) != 1:
+                                    break
+                    else:
+                        k += 1
+                except ValueError:
+                    k += 1
+
+            if command == 'aft_svc':
+                try:
+                    if int(split_second[k]) == 1:  # take bus svc
+                        while True:
+                            k += 1
+                            if k == len(split_second):
+                                break
+                            else:
+                                if int(split_second[k]) != 1:
+                                    break
+                        if k < len(split_second) - 1:
+                            # take the token after the label
+                            token_aft = split_first[k].lower()
+                            if token_isAllCharacter(token_aft) is True:
+                                text = text + connect_token(token_aft) + ' '
+                    else:
+                        k += 1
+
+                except ValueError:
+                    k += 1
+
+    fdist = FreqDist()
+    tokens = word_tokenize(str(text))
+    fdist.update(tokens)
+    for value in fdist.most_common(len(fdist)):
+        print value[0], '\t', value[1]
+
+    for value in fdist.most_common(len(fdist)):
+        print value[0]
+    print len(fdist)
+
+
+######################################################################################################
+######################################################################################################
 if __name__ == '__main__':
-    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
     # name_T = 'Label_Thong_crf.txt'  # good
     # file_line_T = load_file(path, name_T)
     # check_label_crf(file_line_T)
@@ -266,8 +413,8 @@ if __name__ == '__main__':
     # check_label_crf(file_line_P)
     # check_svc_bef_aft(file_line_P, 'before_svc')
 
-    name_all = 'Label_all_crf.txt'  # good
-    file_line_all = load_file(path, name_all)
+    # name_all = 'Label_all_crf.txt'  # good
+    # file_line_all = load_file(path, name_all)
     # check_label_crf(file_line_all)
     # check_svc_bef_aft(file_line_all, 'before_svc')
     # check_svc_bef_aft(file_line_all, 'after_svc')
@@ -278,5 +425,15 @@ if __name__ == '__main__':
     # check_bef_aft_roadBusStop(file_line_all, 'bef_road')
     # check_bef_aft_roadBusStop(file_line_all, 'aft_road')
     # check_bef_aft_roadBusStop(file_line_all, 'bef_busstop')
-    check_bef_aft_roadBusStop(file_line_all, 'aft_busstop')
+    # check_bef_aft_roadBusStop(file_line_all, 'aft_busstop')
 
+    ######################################################################################################
+    ######################################################################################################
+    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
+    name_all = 'Label_all_crf.txt'  # good
+    file_line_all = load_file(path, name_all)
+    # load_all_dic_token_bef_road_busstop(file_line_all, command='road')
+    # load_all_dic_token_bef_road_busstop(file_line_all, command='busstop')
+
+    # load_all_dic_token_bef_aft_svc(file_line_all, command='bef_svc')
+    load_all_dic_token_bef_aft_svc(file_line_all, command='aft_svc')
