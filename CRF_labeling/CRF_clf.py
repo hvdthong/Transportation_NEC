@@ -117,13 +117,7 @@ if __name__ == '__main__':
     print len(Y)
     print 'Loading the target labels ------------------------------------'
 
-    clf = MultinomialNB()
+    # clf = MultinomialNB()
     # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
-    # clf = LogisticRegression()
+    clf = LogisticRegression()
     n_cross_valid_clf_CRF(X, Y, clf, K=5)
-
-
-
-
-
-
