@@ -8,6 +8,7 @@ from sklearn import metrics, svm
 from sklearn.cross_validation import KFold
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import confusion_matrix
+from operator import itemgetter
 
 
 def featuers_CRF(files, path):
@@ -93,8 +94,21 @@ def confusion_matrix_clf_CRF(y_test, y_pred):
         print text.strip()
 
 
+def write_results_clf(list_index, y_test, y_pred):
+    list_write = []
+    for i in range(0, len(list_index)):
+        list_ = []
+        index, pred, test = list_index[i], y_pred[i], y_test[i]
+        list_.append(index)
+        list_.append(pred)
+        list_.append(test)
+        list_write.append(list_)
+    return list_write
+
+
 def n_cross_valid_clf_CRF(X, Y, clf, K):
     cv = KFold(len(X), K, shuffle=True, random_state=0)
+    list_write = []
     for traincv, testcv in cv:
         x_train, x_test = X[traincv], X[testcv]
         y_train, y_test = Y[traincv], Y[testcv]
@@ -103,10 +117,15 @@ def n_cross_valid_clf_CRF(X, Y, clf, K):
         y_pred = clf.predict(x_test)
         print 'Accuracy of linear-crf %f:' % clf.score(x_test, y_test)
         # metrics_clf_ftrCRF(y_test, y_pred)
-        confusion_matrix_clf_CRF(y_test, y_pred)
+        # confusion_matrix_clf_CRF(y_test, y_pred)
+        list_write += write_results_clf(testcv, y_test, y_pred)
 
         print '------------------------------------------------------'
         print '------------------------------------------------------'
+
+    list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
+    for value in list_write:
+        print str(value[0]) + '\t' + str(value[1]) + '\t' + str(value[2])
 
 
 if __name__ == '__main__':

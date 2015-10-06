@@ -13,6 +13,7 @@ from sklearn import metrics
 import timeit
 from main.writeFile import write_file
 from sklearn.metrics import confusion_matrix
+from operator import itemgetter
 
 
 
@@ -480,7 +481,7 @@ def metrics_crf(y_test, y_pred):  # we know that we have 4 labels
 
 def n_cross_valid_crf(X, Y, K):
     # cross validation for crf
-
+    list_write = []
     cv = KFold(len(X), K, shuffle=True, random_state=0)
     for traincv, testcv in cv:
         x_train, x_test = X[traincv], X[testcv]
@@ -493,10 +494,19 @@ def n_cross_valid_crf(X, Y, K):
 
         print 'Accuracy of linear-crf %f:' % ssvm.score(x_test, y_test)
         # metrics_crf(y_test, y_pred)
-        confusion_matrix_CRF(y_test, y_pred)
+        # confusion_matrix_CRF(y_test, y_pred)
+        list_write += write_results_CRF(testcv, y_test, y_pred)
 
         print '------------------------------------------------------'
         print '------------------------------------------------------'
+
+    list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
+    for value in list_write:
+        pred_list = value[1]
+        test_list = value[2]
+
+        for i in range(0, len(pred_list)):
+            print str(pred_list[i]) + '\t' + str(test_list[i])
 
 
 ##################################################################################
@@ -519,6 +529,20 @@ def confusion_matrix_CRF(y_test, y_pred):
         for each in value:
             text += str(each) + '\t'
         print text.strip()
+
+
+##################################################################################
+##################################################################################
+def write_results_CRF(list_index, y_test, y_pred):  # remember the index is the index of sentence
+    list_write = []
+    for i in range(0, len(list_index)):
+        list_ = []
+        index, pred, test = list_index[i], y_pred[i], y_test[i]
+        list_.append(index)
+        list_.append(pred)
+        list_.append(test)
+        list_write.append(list_)
+    return list_write
 
 
 ##################################################################################
