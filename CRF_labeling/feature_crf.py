@@ -11,6 +11,10 @@ from pystruct.learners import FrankWolfeSSVM
 from sklearn.cross_validation import KFold
 from sklearn import metrics
 import timeit
+from main.writeFile import write_file
+from sklearn.metrics import confusion_matrix
+
+
 
 # make the default is 'utf-8'
 reload(sys)
@@ -488,7 +492,33 @@ def n_cross_valid_crf(X, Y, K):
         y_pred = ssvm.predict(x_test)
 
         print 'Accuracy of linear-crf %f:' % ssvm.score(x_test, y_test)
-        metrics_crf(y_test, y_pred)
+        # metrics_crf(y_test, y_pred)
+        confusion_matrix_CRF(y_test, y_pred)
+
+        print '------------------------------------------------------'
+        print '------------------------------------------------------'
+
+
+##################################################################################
+##################################################################################
+def convert_list_CRF(list_label):
+    list_ = []
+    for sentence in list_label:
+        for word in sentence:
+            list_.append(word)
+    return list_
+
+
+def confusion_matrix_CRF(y_test, y_pred):
+    print len(y_test), len(y_pred)
+    list_test = convert_list_CRF(y_test)
+    list_pred = convert_list_CRF(y_pred)
+    matrix = confusion_matrix(list_pred, list_test)
+    for value in matrix:
+        text = ''
+        for each in value:
+            text += str(each) + '\t'
+        print text.strip()
 
 
 ##################################################################################
@@ -614,9 +644,6 @@ def metrics_crf_candidate(sentences, y_test, y_pred):
 
     # return list_write_wrong
     return list_good
-
-
-from main.writeFile import write_file
 
 
 def n_cross_valid_crf_candidate(list_line, X, Y, K):

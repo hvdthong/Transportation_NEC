@@ -7,6 +7,7 @@ from sklearn.linear_model import SGDClassifier, LogisticRegression
 from sklearn import metrics, svm
 from sklearn.cross_validation import KFold
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import confusion_matrix
 
 
 def featuers_CRF(files, path):
@@ -83,6 +84,15 @@ def metrics_clf_ftrCRF(y_test, y_pred):  # we know that we have 4 labels
         print 'F1 of False: %f' % f1_false
 
 
+def confusion_matrix_clf_CRF(y_test, y_pred):
+    matrix = confusion_matrix(y_pred, y_test)
+    for value in matrix:
+        text = ''
+        for each in value:
+            text += str(each) + '\t'
+        print text.strip()
+
+
 def n_cross_valid_clf_CRF(X, Y, clf, K):
     cv = KFold(len(X), K, shuffle=True, random_state=0)
     for traincv, testcv in cv:
@@ -92,7 +102,8 @@ def n_cross_valid_clf_CRF(X, Y, clf, K):
         clf.fit(x_train, y_train)
         y_pred = clf.predict(x_test)
         print 'Accuracy of linear-crf %f:' % clf.score(x_test, y_test)
-        metrics_clf_ftrCRF(y_test, y_pred)
+        # metrics_clf_ftrCRF(y_test, y_pred)
+        confusion_matrix_clf_CRF(y_test, y_pred)
 
         print '------------------------------------------------------'
         print '------------------------------------------------------'
