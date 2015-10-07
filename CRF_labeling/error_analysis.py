@@ -1,5 +1,10 @@
 __author__ = 'vdthoang'
 from main.loadFile import load_file
+import sys
+
+# make the default is 'utf-8'
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 
 def load_results_clf(list_clf):

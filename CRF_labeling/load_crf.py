@@ -6,10 +6,16 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from classification_busService.ftr_bussvc_extraction import is_int
 from CRF_labeling.feature_token_crf import token_isAllCharacter
+import sys
+
+# make the default is 'utf-8'
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 
 def check_label_crf(list_line):
-    # check if we label correct or not
+    # check if we label correct or not.
+    # In particular, we check if the length of text and label are equal or not
     # if not, print line: 'wrong at index'
     list_wrong = []
     for i in range(0, len(list_line), 3):
@@ -29,6 +35,27 @@ def check_label_crf(list_line):
             list_wrong.append('Wrong at index:' + str(i))
             print 'Wrong at index:', i
     print ('There are %d wrong lines' % len(list_wrong))
+
+
+def check_label_crf_lblText(list_line):
+    # we check if user annotate label which appear in the label list or not
+    # print the list of label that user annotated
+    list_label = list()
+    for i in range(0, len(list_line), 3):
+        first = 0
+        second = 0
+        if i % 3 == 0:
+            split_first = list_line[i].strip().split('\t')
+
+        j = i + 1
+        if j % 3 == 1:
+            split_second = list_line[j].strip().split('\t')
+
+        for each in split_second:
+            if each not in list_label:
+                list_label.append(each)
+    print sorted(list_label)
+    return None
 
 
 def check_svc_bef_aft(list_line, command):
@@ -429,11 +456,20 @@ if __name__ == '__main__':
 
     ######################################################################################################
     ######################################################################################################
-    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
-    name_all = 'Label_all_crf.txt'  # good
-    file_line_all = load_file(path, name_all)
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
+    # name_all = 'Label_all_crf.txt'  # good
+    # file_line_all = load_file(path, name_all)
     # load_all_dic_token_bef_road_busstop(file_line_all, command='road')
     # load_all_dic_token_bef_road_busstop(file_line_all, command='busstop')
 
     # load_all_dic_token_bef_aft_svc(file_line_all, command='bef_svc')
-    load_all_dic_token_bef_aft_svc(file_line_all, command='aft_svc')
+    # load_all_dic_token_bef_aft_svc(file_line_all, command='aft_svc')
+
+    ######################################################################################################
+    ######################################################################################################
+    # USING FOR TWITTER DATASET
+    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    name = 'labeling_all.txt'
+    list_line = load_file(path, name)
+    check_label_crf(list_line)
+    check_label_crf_lblText(list_line)

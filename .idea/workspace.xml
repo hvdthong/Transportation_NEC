@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5a7ada62-02aa-484a-859c-bf02a699c53d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/error_analysis.py" afterPath="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/load_crf.py" afterPath="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" afterPath="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Transportation_NEC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error_analysis.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="error_analysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9219288">
-              <caret line="86" column="74" selection-start-line="86" selection-start-column="74" selection-end-line="86" selection-end-column="74" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding>
+                <element signature="e#24#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datasets_iris.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,27 +86,17 @@
         <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_lbl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/create_lbl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_crf.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="load_crf.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="272" column="21" selection-start-line="272" selection-start-column="21" selection-end-line="272" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.82433987">
+              <caret line="472" column="37" selection-start-line="472" selection-start-column="37" selection-end-line="472" selection-end-column="37" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -103,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="530" column="26" selection-start-line="530" selection-start-column="26" selection-end-line="530" selection-end-column="26" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="30" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
                 <element signature="e#19234#24594#0" expanded="false" />
@@ -194,14 +199,14 @@
         <option value="$PROJECT_DIR$/../Research_Group/feature_selection/pearson_correlation.py" />
         <option value="$PROJECT_DIR$/main/pattern_busPlate.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/feature_token_crf.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/clf_CRF.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
-        <option value="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/feature_crf.py" />
+        <option value="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
+        <option value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
       </list>
     </option>
   </component>
@@ -278,20 +283,6 @@
               <option name="myItemId" value="Transportation_NEC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scikit_learning_pack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Transportation_NEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Transportation_NEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -338,7 +329,7 @@
       <recent name="D:\PYTHON_CODE\Transportation_NEC\twitterFunc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.error_analysis">
+  <component name="RunManager" selected="Python.load_crf">
     <configuration default="false" name="CRF_running" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -352,23 +343,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="feature_crf" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/feature_crf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -420,6 +394,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="load_crf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Transportation_NEC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -566,18 +557,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.busCode_extraction" />
       <item index="1" class="java.lang.String" itemvalue="Python.CRF_running" />
-      <item index="2" class="java.lang.String" itemvalue="Python.feature_crf" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CRF_clf" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
-      <item index="5" class="java.lang.String" itemvalue="Python.error_analysis" />
+      <item index="2" class="java.lang.String" itemvalue="Python.CRF_clf" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
+      <item index="4" class="java.lang.String" itemvalue="Python.error_analysis" />
+      <item index="5" class="java.lang.String" itemvalue="Python.load_crf" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.error_analysis" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CRF_running" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CRF_clf" />
-        <item index="3" class="java.lang.String" itemvalue="Python.feature_crf" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
+        <item index="0" class="java.lang.String" itemvalue="Python.load_crf" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
+        <item index="2" class="java.lang.String" itemvalue="Python.error_analysis" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CRF_running" />
+        <item index="4" class="java.lang.String" itemvalue="Python.CRF_clf" />
       </list>
     </recent_temporary>
   </component>
@@ -608,16 +599,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114072494" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114072494" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30054054" sideWeight="0.50416666" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1444563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3736674" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="561" y="57" width="798" height="925" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3736674" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="561" y="57" width="798" height="925" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946696" sideWeight="0.49429038" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31962025" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12260128" sideWeight="0.5213793" order="2" side_tool="true" content_ui="tabs" />
@@ -1025,40 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="272" column="21" selection-start-line="272" selection-start-column="21" selection-end-line="272" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.2058823">
@@ -1084,6 +1041,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="59" selection-start-line="66" selection-start-column="4" selection-end-line="74" selection-end-column="59" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_running.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1097,7 +1088,7 @@
     <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="530" column="26" selection-start-line="530" selection-start-column="26" selection-end-line="530" selection-end-column="26" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
             <element signature="e#19234#24594#0" expanded="false" />
@@ -1107,21 +1098,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="59" selection-start-line="66" selection-start-column="4" selection-end-line="74" selection-end-column="59" />
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#24#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9219288">
-          <caret line="86" column="74" selection-start-line="86" selection-start-column="74" selection-end-line="86" selection-end-column="74" />
-          <folding />
+        <state vertical-scroll-proportion="0.82433987">
+          <caret line="472" column="37" selection-start-line="472" selection-start-column="37" selection-end-line="472" selection-end-column="37" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
