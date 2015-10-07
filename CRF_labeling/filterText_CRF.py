@@ -52,8 +52,12 @@ def filterTxt_CRF(list_line):
                 text += token_filter + '\t'
                 label += split_second[k] + '\t'
 
-        print text.strip()
-        print label.strip()
+        list_convert.append(text.strip())
+        list_convert.append(label.strip())
+        list_convert.append('\n')
+
+    del list_convert[-1]
+    return list_convert
 
 
 if __name__ == '__main__':
@@ -61,6 +65,10 @@ if __name__ == '__main__':
     path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
     name = 'labeling_all.txt'
     list_line_ = load_file(path, name)
-    print len(list_line_)
+    list_convert = filterTxt_CRF(list_line_)
 
-    filterTxt_CRF(list_line_)
+    print 'Length of orignial list %i ' % len(list_line_)
+    print 'Length of converted list %i ' % len(list_convert)
+
+    for value in list_convert:
+        print value

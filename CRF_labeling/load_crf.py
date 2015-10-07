@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from classification_busService.ftr_bussvc_extraction import is_int
 from CRF_labeling.feature_token_crf import token_isAllCharacter
+from CRF_labeling.filterText_CRF import filterTxt_CRF
 import sys
 
 # make the default is 'utf-8'
@@ -472,5 +473,6 @@ if __name__ == '__main__':
     path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
     name = 'labeling_all.txt'
     list_line = load_file(path, name)
-    check_label_crf(list_line)
-    check_label_crf_lblText(list_line)
+    # check_label_crf(list_line)
+    # check_label_crf_lblText(list_line)
+    check_label_crf(filterTxt_CRF(list_line))
