@@ -63,6 +63,14 @@ def get_CRFwrong_CLFright(list_crf, list_clf, list_truth, list_text):
         crf, clf, truth = int(list_crf[i]), int(list_clf[i]), int(list_truth[i])
         if (crf != truth) and (clf == truth) and (crf != 0):
             print crf, clf, truth, list_text[i]
+    return None
+
+
+def get_CRFright_CLFwrong(list_crf, list_clf, list_truth, list_text):
+    for i in range(0, len(list_crf)):
+        crf, clf, truth = int(list_crf[i]), int(list_clf[i]), int(list_truth[i])
+        if (crf == truth) and (clf != truth) and (crf != 0):
+            print crf, clf, truth, list_text[i]
 
 
 if __name__ == '__main__':
@@ -75,5 +83,6 @@ if __name__ == '__main__':
     list_crf = load_results_CRF(load_file(path_, name_crf))
     list_word = load_text(load_file(path_, name_file))
 
-    get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
+    # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
+    get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
 
