@@ -8,6 +8,7 @@ from classification_busService.ftr_bussvc_extraction import is_int
 from CRF_labeling.feature_token_crf import token_isAllCharacter
 from CRF_labeling.filterText_CRF import filterTxt_CRF
 import sys
+from main.writeFile import write_file
 
 # make the default is 'utf-8'
 reload(sys)
@@ -347,9 +348,12 @@ def load_all_dic_token_bef_road_busstop(list_line, command):
     for value in fdist.most_common(len(fdist)):
         print value[0], '\t', value[1]
 
+    list_return = list()
     for value in fdist.most_common(len(fdist)):
+        list_return.append(value[0])
         print value[0]
     print len(fdist)
+    return list_return
 
 
 def load_all_dic_token_bef_aft_svc(list_line, command):
@@ -419,9 +423,12 @@ def load_all_dic_token_bef_aft_svc(list_line, command):
     for value in fdist.most_common(len(fdist)):
         print value[0], '\t', value[1]
 
+    list_return = list()
     for value in fdist.most_common(len(fdist)):
+        list_return.append(value[0])
         print value[0]
     print len(fdist)
+    return list_return
 
 
 ######################################################################################################
@@ -472,7 +479,24 @@ if __name__ == '__main__':
     # USING FOR TWITTER DATASET
     path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
     name = 'labeling_all.txt'
-    list_line = load_file(path, name)
+    list_line = filterTxt_CRF(load_file(path, name))
     # check_label_crf(list_line)
     # check_label_crf_lblText(list_line)
-    check_label_crf(filterTxt_CRF(list_line))
+    # check_label_crf(filterTxt_CRF(list_line))
+
+    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features'
+    # name_tok_bef_road = 'all_token_bef_road'
+    # list_tok_bef_road = load_all_dic_token_bef_road_busstop(list_line, command='road')
+    # write_file(path_write, name_tok_bef_road, list_tok_bef_road)
+
+    # name_tok_bef_busstop = 'all_token_bef_busstop'
+    # list_tok_bef_busstop = load_all_dic_token_bef_road_busstop(list_line, command='busstop')
+    # write_file(path_write, name_tok_bef_busstop, list_tok_bef_busstop)
+
+    # name_tok_bef_bussvc = 'all_token_bef_bussvc'
+    # list_tok_bef_bussvc = load_all_dic_token_bef_aft_svc(list_line, command='bef_svc')
+    # write_file(path_write, name_tok_bef_bussvc, list_tok_bef_bussvc)
+
+    # name_tok_aft_bussvc = 'all_token_aft_bussvc'
+    # list_tok_aft_bussvc = load_all_dic_token_bef_aft_svc(list_line, command='aft_svc')
+    # write_file(path_write, name_tok_aft_bussvc, list_tok_aft_bussvc)

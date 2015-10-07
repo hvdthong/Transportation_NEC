@@ -151,3 +151,7 @@ if __name__ == '__main__':
     # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
     clf = LogisticRegression()
     n_cross_valid_clf_CRF(X, Y, clf, K=5)
+
+    #################################################################################################
+    #################################################################################################
+    # RUNNING FOR TWITTER DATASET
