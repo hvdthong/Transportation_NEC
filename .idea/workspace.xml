@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a7ada62-02aa-484a-859c-bf02a699c53d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/error_analysis.py" afterPath="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nltk_pack/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CRF_labeling/filterText_CRF.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nltk_pack/sentence_dectection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/filter_text.py" afterPath="$PROJECT_DIR$/main/filter_text.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/load_crf.py" afterPath="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" afterPath="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Transportation_NEC.iws" />
@@ -30,21 +32,9 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="59" selection-start-line="66" selection-start-column="4" selection-end-line="74" selection-end-column="59" />
+              <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CRF_clf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_clf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="127" column="73" selection-start-line="125" selection-start-column="4" selection-end-line="127" selection-end-column="73" />
-              <folding>
-                <element signature="e#24#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <caret line="91" column="75" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -62,44 +52,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datasets_iris.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datasets_newsgroups.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_conf_matrix.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_crf.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="load_crf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82433987">
-              <caret line="472" column="37" selection-start-line="472" selection-start-column="37" selection-end-line="472" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="38" selection-start-line="20" selection-start-column="4" selection-end-line="29" selection-end-column="38" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
+                <element signature="e#9971#12636#0" expanded="false" />
+                <element signature="e#12699#15315#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feature_token_crf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_token_crf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="30" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
                 <element signature="e#19234#24594#0" expanded="false" />
@@ -119,23 +91,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CRF_running.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_running.py">
+      <file leaf-file-name="filterText_CRF.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CRF_labeling/filterText_CRF.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="30" />
               <folding>
-                <element signature="e#24#77#0" expanded="true" />
+                <element signature="e#24#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classification.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/sklearn/metrics/classification.py">
+      <file leaf-file-name="sentence_dectection.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nltk_pack/sentence_dectection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33180252">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nltk_pack/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter_text.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/filter_text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#50#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter_text_v2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/filter_text_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -156,9 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/event_extract/test_lib/stemming_testing.py" />
-        <option value="$PROJECT_DIR$/event_extract/test_lib/sentiment_analysis.py" />
-        <option value="$PROJECT_DIR$/pystruct_pack/linearCRF.py" />
         <option value="$PROJECT_DIR$/event_extract/nltk_n_grams.py" />
         <option value="$PROJECT_DIR$/pytagcloud_pack/wordcloud_testing.py" />
         <option value="$PROJECT_DIR$/classification_busService/gt_crf.py" />
@@ -207,6 +210,9 @@
         <option value="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
+        <option value="$PROJECT_DIR$/main/filter_text.py" />
+        <option value="$PROJECT_DIR$/CRF_labeling/filterText_CRF.py" />
+        <option value="$PROJECT_DIR$/nltk_pack/sentence_dectection.py" />
       </list>
     </option>
   </component>
@@ -294,6 +300,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="nltk_pack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Transportation_NEC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Transportation_NEC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CRF_labeling" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -329,41 +349,7 @@
       <recent name="D:\PYTHON_CODE\Transportation_NEC\twitterFunc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.load_crf">
-    <configuration default="false" name="CRF_running" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CRF_clf" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.sentence_dectection">
     <configuration default="false" name="test_conf_matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -411,6 +397,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="filterText_CRF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Transportation_NEC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/filterText_CRF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="sentence_dectection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nltk_pack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Transportation_NEC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nltk_pack/sentence_dectection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -556,19 +576,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.busCode_extraction" />
-      <item index="1" class="java.lang.String" itemvalue="Python.CRF_running" />
-      <item index="2" class="java.lang.String" itemvalue="Python.CRF_clf" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
-      <item index="4" class="java.lang.String" itemvalue="Python.error_analysis" />
-      <item index="5" class="java.lang.String" itemvalue="Python.load_crf" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
+      <item index="2" class="java.lang.String" itemvalue="Python.error_analysis" />
+      <item index="3" class="java.lang.String" itemvalue="Python.load_crf" />
+      <item index="4" class="java.lang.String" itemvalue="Python.filterText_CRF" />
+      <item index="5" class="java.lang.String" itemvalue="Python.sentence_dectection" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.load_crf" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
-        <item index="2" class="java.lang.String" itemvalue="Python.error_analysis" />
-        <item index="3" class="java.lang.String" itemvalue="Python.CRF_running" />
-        <item index="4" class="java.lang.String" itemvalue="Python.CRF_clf" />
+        <item index="0" class="java.lang.String" itemvalue="Python.sentence_dectection" />
+        <item index="1" class="java.lang.String" itemvalue="Python.filterText_CRF" />
+        <item index="2" class="java.lang.String" itemvalue="Python.load_crf" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test_conf_matrix" />
+        <item index="4" class="java.lang.String" itemvalue="Python.error_analysis" />
       </list>
     </recent_temporary>
   </component>
@@ -600,9 +620,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114072494" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114072494" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30054054" sideWeight="0.50416666" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -693,49 +713,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/pattern_busPlate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/token_creating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/create_lbl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/gt_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="319" column="28" selection-start-line="317" selection-start-column="8" selection-end-line="319" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-            <element signature="e#19234#24594#0" expanded="false" />
-            <element signature="e#24654#26222#0" expanded="false" />
-            <element signature="e#26430#27350#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -750,6 +727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -810,6 +788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -870,6 +849,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,13 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_token_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/create_lbl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1037,16 +1010,6 @@
           <caret line="127" column="73" selection-start-line="125" selection-start-column="4" selection-end-line="127" selection-end-column="73" />
           <folding>
             <element signature="e#24#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="59" selection-start-line="66" selection-start-column="4" selection-end-line="74" selection-end-column="59" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1085,10 +1048,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="75" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="30" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
             <element signature="e#19234#24594#0" expanded="false" />
@@ -1098,22 +1081,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_token_crf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82433987">
-          <caret line="472" column="37" selection-start-line="472" selection-start-column="37" selection-end-line="472" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="38" selection-start-line="20" selection-start-column="4" selection-end-line="29" selection-end-column="38" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
+            <element signature="e#9971#12636#0" expanded="false" />
+            <element signature="e#12699#15315#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/filter_text_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/filter_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/filterText_CRF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltk_pack/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nltk_pack/sentence_dectection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33180252">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#64#0" expanded="true" />
           </folding>
         </state>
       </provider>

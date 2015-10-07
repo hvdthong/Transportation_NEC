@@ -40,6 +40,7 @@ def check_label_crf(list_line):
 def check_label_crf_lblText(list_line):
     # we check if user annotate label which appear in the label list or not
     # print the list of label that user annotated
+    # for CRF, we have four labels: 0:None, 1: Bus service, 2: Road, 3: Bus stop
     list_label = list()
     for i in range(0, len(list_line), 3):
         first = 0
