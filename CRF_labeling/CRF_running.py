@@ -54,8 +54,8 @@ if __name__ == '__main__':
 
     # running CRF models
     # n_cross_valid_crf(X, Y, K=2, command='metrics_F1')  # use to calculate the F1 for classification
-    n_cross_valid_crf(X, Y, K=2, command='confusion_matrix')  # use to calculate the F1 for classification
-    # n_cross_valid_crf(X, Y, K=2, command='write_results')  # use to calculate the confusion matrix
+    # n_cross_valid_crf(X, Y, K=2, command='confusion_matrix')  # use to calculate the F1 for classification
+    n_cross_valid_crf(X, Y, K=2, command='write_results')  # use to calculate the confusion matrix
 
     stop = timeit.default_timer()
     print 'Finish running CRF model %.3f sec' % (stop - start)

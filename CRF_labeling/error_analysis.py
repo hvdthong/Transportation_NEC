@@ -1,6 +1,8 @@
 __author__ = 'vdthoang'
 from main.loadFile import load_file
 import sys
+from CRF_labeling.filterText_CRF import filterTxt_CRF
+
 
 # make the default is 'utf-8'
 reload(sys)
@@ -79,14 +81,29 @@ def get_CRFright_CLFwrong(list_crf, list_clf, list_truth, list_text):
 
 
 if __name__ == '__main__':
-    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
-    name_clf = 'result_LogReg.txt'
-    name_crf = 'result_CRF.txt'
-    name_file = 'Label_all_crf.txt'
+    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
+    # name_clf = 'result_LogReg.txt'
+    # name_crf = 'result_CRF.txt'
+    # name_file = 'Label_all_crf.txt'
+    #
+    # list_clf = load_results_clf(load_file(path_, name_clf))
+    # list_crf = load_results_CRF(load_file(path_, name_crf))
+    # list_word = load_text(load_file(path_, name_file))
+    #
+    # # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
+    # get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
+
+    ############################################################################
+    ############################################################################
+    # USING FOR TWITTER DATASET
+    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    name_clf = 'results_LR_twitter.txt'
+    name_crf = 'results_CRF_twitter.txt'
+    name_file = 'labeling_all.txt'
 
     list_clf = load_results_clf(load_file(path_, name_clf))
     list_crf = load_results_CRF(load_file(path_, name_crf))
-    list_word = load_text(load_file(path_, name_file))
+    list_word = load_text(filterTxt_CRF(load_file(path_, name_file)))
 
     # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
     get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
