@@ -479,9 +479,12 @@ def metrics_crf(y_test, y_pred):  # we know that we have 4 labels
         print 'F1 of False: %f' % f1_false
 
 
-def n_cross_valid_crf(X, Y, K):
+def n_cross_valid_crf(X, Y, K, command):
     # cross validation for crf
-    # list_write = []
+
+    if command == 'write_results':
+        list_write = list()
+
     cv = KFold(len(X), K, shuffle=True, random_state=0)
     for traincv, testcv in cv:
         x_train, x_test = X[traincv], X[testcv]
@@ -493,20 +496,24 @@ def n_cross_valid_crf(X, Y, K):
         y_pred = ssvm.predict(x_test)
 
         print 'Accuracy of linear-crf %f:' % ssvm.score(x_test, y_test)
-        metrics_crf(y_test, y_pred)
-        # confusion_matrix_CRF(y_test, y_pred)
-        # list_write += write_results_CRF(testcv, y_test, y_pred)
+        if command == 'metrics_F1':
+            metrics_crf(y_test, y_pred)
+        elif command == 'confusion_matrix':
+            confusion_matrix_CRF(y_test, y_pred)
+        elif command == 'write_results':
+            list_write += write_results_CRF(testcv, y_test, y_pred)
 
         print '------------------------------------------------------'
         print '------------------------------------------------------'
 
-    # list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
-    # for value in list_write:
-    #     pred_list = value[1]
-    #     test_list = value[2]
-    #
-    #     for i in range(0, len(pred_list)):
-    #         print str(pred_list[i]) + '\t' + str(test_list[i])
+    if command == 'write_results':
+        list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
+        for value in list_write:
+            pred_list = value[1]
+            test_list = value[2]
+
+            for i in range(0, len(pred_list)):
+                print str(pred_list[i]) + '\t' + str(test_list[i])
 
 
 ##################################################################################

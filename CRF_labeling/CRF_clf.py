@@ -108,9 +108,10 @@ def write_results_clf(list_index, y_test, y_pred):
     return list_write
 
 
-def n_cross_valid_clf_CRF(X, Y, clf, K):
+def n_cross_valid_clf_CRF(X, Y, clf, K, command):
     cv = KFold(len(X), K, shuffle=True, random_state=0)
-    # list_write = []
+    if command == 'write_results':
+        list_write = []
     for traincv, testcv in cv:
         x_train, x_test = X[traincv], X[testcv]
         y_train, y_test = Y[traincv], Y[testcv]
@@ -118,16 +119,24 @@ def n_cross_valid_clf_CRF(X, Y, clf, K):
         clf.fit(x_train, y_train)
         y_pred = clf.predict(x_test)
         print 'Accuracy of linear-crf %f:' % clf.score(x_test, y_test)
-        metrics_clf_ftrCRF(y_test, y_pred)
-        # confusion_matrix_clf_CRF(y_test, y_pred)
-        # list_write += write_results_clf(testcv, y_test, y_pred)
+
+        if command == 'metrics_F1':
+            metrics_clf_ftrCRF(y_test, y_pred)
+        elif command == 'confusion_matrix':
+            confusion_matrix_clf_CRF(y_test, y_pred)
+        elif command == 'write_results':
+            list_write += write_results_clf(testcv, y_test, y_pred)
+        else:
+            print 'You need to give correct command'
+            quit()
 
         print '------------------------------------------------------'
         print '------------------------------------------------------'
 
-    # list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
-    # for value in list_write:
-    #     print str(value[0]) + '\t' + str(value[1]) + '\t' + str(value[2])
+    if command == 'write_results':
+        list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
+        for value in list_write:
+            print str(value[0]) + '\t' + str(value[1]) + '\t' + str(value[2])
 
 
 if __name__ == '__main__':
@@ -177,4 +186,6 @@ if __name__ == '__main__':
     # clf = MultinomialNB()
     # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
     clf = LogisticRegression()
-    n_cross_valid_clf_CRF(X, Y, clf, K=5)
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
+    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
