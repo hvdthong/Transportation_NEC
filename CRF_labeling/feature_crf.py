@@ -481,32 +481,32 @@ def metrics_crf(y_test, y_pred):  # we know that we have 4 labels
 
 def n_cross_valid_crf(X, Y, K):
     # cross validation for crf
-    list_write = []
+    # list_write = []
     cv = KFold(len(X), K, shuffle=True, random_state=0)
     for traincv, testcv in cv:
         x_train, x_test = X[traincv], X[testcv]
         y_train, y_test = Y[traincv], Y[testcv]
 
         crf = ChainCRF(inference_method='max-product', directed=True, class_weight=None)
-        ssvm = FrankWolfeSSVM(model=crf, C=1.0, max_iter=50)
+        ssvm = FrankWolfeSSVM(model=crf, C=1.0, max_iter=100)
         ssvm.fit(x_train, y_train)
         y_pred = ssvm.predict(x_test)
 
         print 'Accuracy of linear-crf %f:' % ssvm.score(x_test, y_test)
-        # metrics_crf(y_test, y_pred)
+        metrics_crf(y_test, y_pred)
         # confusion_matrix_CRF(y_test, y_pred)
-        list_write += write_results_CRF(testcv, y_test, y_pred)
+        # list_write += write_results_CRF(testcv, y_test, y_pred)
 
         print '------------------------------------------------------'
         print '------------------------------------------------------'
 
-    list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
-    for value in list_write:
-        pred_list = value[1]
-        test_list = value[2]
-
-        for i in range(0, len(pred_list)):
-            print str(pred_list[i]) + '\t' + str(test_list[i])
+    # list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
+    # for value in list_write:
+    #     pred_list = value[1]
+    #     test_list = value[2]
+    #
+    #     for i in range(0, len(pred_list)):
+    #         print str(pred_list[i]) + '\t' + str(test_list[i])
 
 
 ##################################################################################
@@ -719,7 +719,7 @@ def n_cross_valid_crf_candidate(list_line, X, Y, K):
 ##################################################################################
 def label_distribution(list_line):
     # check the distribution of labels:
-    list_all = []
+    list_all = list()
     total = 0
     for i in range(0, len(list_line), 3):
         split_first = 0
@@ -735,8 +735,7 @@ def label_distribution(list_line):
 
     labels = []
     for line in list_all:
-        for label in split_second:
-            total += 1
+        for label in line:
             if label not in labels:
                 labels.append(label)
 
@@ -747,8 +746,9 @@ def label_distribution(list_line):
             for value in line:
                 if value.strip() == label:
                     cnt_label += 1
-        print 'Counting number of label: %i' % cnt_label
-    print 'Total labels: %i' % total
+        print 'Counting number of label %i: \t %i \t %.2f' % (int(label), cnt_label, (cnt_label / float(total) * 100))
+    print 'Total labels: \t %i' % total
+    return None
 
 
 ##################################################################################

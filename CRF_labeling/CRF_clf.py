@@ -9,6 +9,8 @@ from sklearn.cross_validation import KFold
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import confusion_matrix
 from operator import itemgetter
+from CRF_labeling.filterText_CRF import filterTxt_CRF
+from CRF_labeling.feature_crf import label_distribution
 
 
 def featuers_CRF(files, path):
@@ -108,7 +110,7 @@ def write_results_clf(list_index, y_test, y_pred):
 
 def n_cross_valid_clf_CRF(X, Y, clf, K):
     cv = KFold(len(X), K, shuffle=True, random_state=0)
-    list_write = []
+    # list_write = []
     for traincv, testcv in cv:
         x_train, x_test = X[traincv], X[testcv]
         y_train, y_test = Y[traincv], Y[testcv]
@@ -116,33 +118,58 @@ def n_cross_valid_clf_CRF(X, Y, clf, K):
         clf.fit(x_train, y_train)
         y_pred = clf.predict(x_test)
         print 'Accuracy of linear-crf %f:' % clf.score(x_test, y_test)
-        # metrics_clf_ftrCRF(y_test, y_pred)
+        metrics_clf_ftrCRF(y_test, y_pred)
         # confusion_matrix_clf_CRF(y_test, y_pred)
-        list_write += write_results_clf(testcv, y_test, y_pred)
+        # list_write += write_results_clf(testcv, y_test, y_pred)
 
         print '------------------------------------------------------'
         print '------------------------------------------------------'
 
-    list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
-    for value in list_write:
-        print str(value[0]) + '\t' + str(value[1]) + '\t' + str(value[2])
+    # list_write = sorted(list_write, key=itemgetter(0))  # sorted list based on index
+    # for value in list_write:
+    #     print str(value[0]) + '\t' + str(value[1]) + '\t' + str(value[2])
 
 
 if __name__ == '__main__':
     # loading features from CRF, and construct the features for classification
     # running classification
 
+    # # loading CRF features
+    # path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF/crf_features/features'
+    # files_ = folder_files(path_ftr)
+    # features = featuers_CRF(files_, path_ftr)
+    # X = np.array(convert_ftr_x_clf(features))
+    # print len(X)
+    #
+    # # loading target labels
+    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
+    # name_ = 'Label_all_crf.txt'
+    # list_line_ = load_file(path_, name_)
+    # Y = np.array(convert_frt_y_clf(list_line_))
+    # print len(Y)
+    # print 'Loading the target labels ------------------------------------'
+    #
+    # # clf = MultinomialNB()
+    # # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
+    # clf = LogisticRegression()
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5)
+
+    #################################################################################################
+    #################################################################################################
+    # RUNNING FOR TWITTER DATASET
+
     # loading CRF features
-    path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF/crf_features/features'
+    path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features/features'
     files_ = folder_files(path_ftr)
     features = featuers_CRF(files_, path_ftr)
     X = np.array(convert_ftr_x_clf(features))
     print len(X)
 
     # loading target labels
-    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF'
-    name_ = 'Label_all_crf.txt'
-    list_line_ = load_file(path_, name_)
+    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    name_ = 'labeling_all.txt'
+    list_line_ = filterTxt_CRF(load_file(path_, name_))
+    label_distribution(list_line_)  # get the distribution of labeling in Twitter
     Y = np.array(convert_frt_y_clf(list_line_))
     print len(Y)
     print 'Loading the target labels ------------------------------------'
@@ -151,7 +178,3 @@ if __name__ == '__main__':
     # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
     clf = LogisticRegression()
     n_cross_valid_clf_CRF(X, Y, clf, K=5)
-
-    #################################################################################################
-    #################################################################################################
-    # RUNNING FOR TWITTER DATASET
