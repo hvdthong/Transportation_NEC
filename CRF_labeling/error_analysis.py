@@ -105,6 +105,6 @@ if __name__ == '__main__':
     list_crf = load_results_CRF(load_file(path_, name_crf))
     list_word = load_text(filterTxt_CRF(load_file(path_, name_file)))
 
-    # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
-    get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
+    get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
+    # get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
 
