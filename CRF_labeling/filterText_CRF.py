@@ -28,10 +28,18 @@ def filter_eachToken(text):  # use for each token string
             text = text[:-1]
         else:
             break
-    return text
+    return text.strip()
 
 
-def filterTxt_CRF(list_line):
+def filter_eachTok_rmLinks(text):
+    text = filter_eachToken(text)  # remove all punctuations
+    if ('https://' in text) or ('http://' in text):
+        return ''
+    else:
+        return text.strip()
+
+
+def filterTxt_CRF(list_line, command):
     # remove all the punctuation for each token in the text
     list_convert = []
     for i in range(0, len(list_line), 3):
@@ -47,7 +55,15 @@ def filterTxt_CRF(list_line):
 
         for k in range(0, len(split_first)):
             token_ = split_first[k].strip()
-            token_filter = filter_eachToken(token_.strip())
+
+            if command == 'removePunc':  # remove all punctuations
+                token_filter = filter_eachToken(token_)
+            elif command == 'removeLink':  # remove all punctuations and links in token
+                token_filter = filter_eachTok_rmLinks(token_)
+            else:
+                print 'You need to give the correct command'
+                quit()
+
             if len(token_filter) != 0:
                 text += token_filter + '\t'
                 label += split_second[k] + '\t'
@@ -65,7 +81,8 @@ if __name__ == '__main__':
     path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
     name = 'labeling_all.txt'
     list_line_ = load_file(path, name)
-    list_convert = filterTxt_CRF(list_line_)
+    list_convert = filterTxt_CRF(list_line_, command='removePunc')  # remove all punctuation for each token
+    list_convert = filterTxt_CRF(list_line_, command='removeLink')
 
     print 'Length of orignial list %i ' % len(list_line_)
     print 'Length of converted list %i ' % len(list_convert)

@@ -177,15 +177,16 @@ if __name__ == '__main__':
     # loading target labels
     path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
     name_ = 'labeling_all.txt'
-    list_line_ = filterTxt_CRF(load_file(path_, name_))
+    # list_line_ = filterTxt_CRF(load_file(path_, name_), 'removePunc')  # remove all punctuations
+    list_line_ = filterTxt_CRF(load_file(path_, name_), 'removeLink')  # remove all links
     label_distribution(list_line_)  # get the distribution of labeling in Twitter
     Y = np.array(convert_frt_y_clf(list_line_))
     print len(Y)
     print 'Loading the target labels ------------------------------------'
 
-    # clf = MultinomialNB()
+    clf = MultinomialNB()
     # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
-    clf = LogisticRegression()
-    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
+    # clf = LogisticRegression()
+    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
     # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
-    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
