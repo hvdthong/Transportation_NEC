@@ -13,10 +13,10 @@ from pytagcloud.colors import COLOR_SCHEMES
 # import webbrowser
 # webbrowser.open('cloud_event.png') # see results
 
-TEXT = '960 960 960 176 176 176 962 962 300'
+TEXT = 'stop at from to singapore towards road around and like no bustp puasa those between frhmd'
 counts = get_tag_counts(TEXT)
-tags = make_tags(counts, maxsize=25, colors=COLOR_SCHEMES['audacity'])
-create_tag_image(tags, 'cloud_num.png', size=(900, 600), background=(0, 0, 0, 0), fontname='Lobster', layout=LAYOUT_MIX, rectangular=True)
+tags = make_tags(counts, maxsize=100)
+create_tag_image(tags, 'cloud_num.png', background=(0, 0, 0, 0))
 
 import webbrowser
 webbrowser.open('cloud_num.png') # see results

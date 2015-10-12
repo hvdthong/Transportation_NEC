@@ -54,10 +54,9 @@ def load_text(list_line):
         if j % 3 == 1:
             split_second = list_line[j].strip().split('\t')
 
-        index = cnt
         for word in split_first:
             list_ = list()
-            list_.append(index)
+            list_.append(cnt)
             list_.append(word)
             list_word.append(list_)
         cnt += 1
