@@ -490,7 +490,7 @@ def n_cross_valid_crf(X, Y, K, command):
         x_train, x_test = X[traincv], X[testcv]
         y_train, y_test = Y[traincv], Y[testcv]
 
-        crf = ChainCRF(inference_method='max-product', directed=True, class_weight=None)
+        crf = ChainCRF(inference_method='max-product', directed=False, class_weight=None)
         ssvm = FrankWolfeSSVM(model=crf, C=1.0, max_iter=100)
         ssvm.fit(x_train, y_train)
         y_pred = ssvm.predict(x_test)
