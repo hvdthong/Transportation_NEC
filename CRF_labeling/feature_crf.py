@@ -519,7 +519,7 @@ def n_cross_valid_crf(X, Y, K, command):
 ##################################################################################
 ##################################################################################
 def convert_list_CRF(list_label):
-    list_ = []
+    list_ = list()
     for sentence in list_label:
         for word in sentence:
             list_.append(word)
