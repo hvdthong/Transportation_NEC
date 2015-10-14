@@ -28,14 +28,14 @@ test_y = np.array(list_y)
 print np.array(list_x)[0].shape[1]
 
 x_test = [[1,0,0,0], [1,0,1,0]]
-list_x_test = []
+list_x_test = list()
 list_x_test.append(x_test)
 
 pred = ssvm.predict(np.array(list_x_test))
 for value in pred:
     print value
 
-list_ = []
+list_ = list()
 list_.append(0)
 list_.append(1)
 print list_
