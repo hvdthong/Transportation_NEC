@@ -60,7 +60,8 @@ def bus_stop(path, name):
     print (len(list_stop))
     
     write_file(path, 'bus_stop', list_stop) #extract texts and write it on csv file
-    
+
+
 def bus_stop_services(path, name):
     #used to extract information from bus service stop
     with open(path + '/' + name) as data_file:    

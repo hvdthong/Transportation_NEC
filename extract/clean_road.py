@@ -35,24 +35,24 @@ def filter_road(list_road):
         if (value_first not in list_remove) and (value_first not in list_):
             list_.append(value_first)
 
-        if (i == len(list_road) - 1):
+        if i == len(list_road) - 1:
             if (value_first not in list_remove) and (value_first not in list_):
                 list_.append(value_first)
     return list_
 
 
 def clean_roadName(path, name_write, table):
-    db = MySQLdb.connect(host="localhost", # your host, usually localhost
-                     user="root", # your username
-                      passwd="ducthong", # your password
-                      db="2015_allschemas") # name of the data base
+    db = MySQLdb.connect(host="localhost",  # your host, usually localhost
+                     user="root",  # your username
+                      passwd="ducthong",  # your password
+                      db="2015_allschemas")  # name of the data base
     cur = db.cursor()
     list_write = []
 
     cnt = 0
     # sql = 'select distinct post_id from ' + table #sgforum
     # sql = 'select distinct facebookID from ' + table #facebook
-    sql = 'select distinct tweetID from ' + table #twitter
+    sql = 'select distinct tweetID from ' + table  # twitter
     print sql
     cur.execute(sql)
 
@@ -68,9 +68,9 @@ def clean_roadName(path, name_write, table):
         # sql_id = 'select distinct road from ' + table + ' where post_id = ' \
         #          + str(id_value) + ' order by road' #sgforum
         # sql_id = 'select distinct road from ' + table + ' where facebookID = ' \
-        #          + "'" + str(id_value) + "'" + ' order by road' #facebook
+        #          + "'" + str(id_value) + "'" + ' order by road'  # facebook
         sql_id = 'select distinct road from ' + table + ' where tweetID = ' \
-                 + "'" + str(id_value) + "'" + ' order by road' #twitter
+                 + "'" + str(id_value) + "'" + ' order by road'  # twitter
         print(sql_id)
         cur.execute(sql_id)
         list_road = []
@@ -91,6 +91,7 @@ def clean_roadName(path, name_write, table):
 
     print (len(list_write))
     write_file(path, name_write, list_write)
+
 
 if __name__ == '__main__':
     # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts'

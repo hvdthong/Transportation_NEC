@@ -24,7 +24,7 @@ print X_iris.shape, y_iris.shape
 # print '------------------------------'
 # print X_iris[0], y_iris[0] # print first element
 
-X, y = X_iris[:, :2], y_iris # get the first two elements in X
+X, y = X_iris[:, :2], y_iris  # get the first two elements in X
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=33)
 print X_train.shape, y_train.shape # X_train is training data & y_train is the label of training data
 
@@ -68,7 +68,7 @@ print 'Accuracy of clf: %f' % metrics.accuracy_score(y_test, y_pred)
 # print metrics.confusion_matrix(y_test, y_pred)
 
 # create a composite estimator made by a pipeline of the standarization and the linear model
-clf = Pipeline([('scaler', preprocessing.StandardScaler()),('linear_model', SGDClassifier())])
+clf = Pipeline([('scaler', preprocessing.StandardScaler()), ('linear_model', SGDClassifier())])
 cv = KFold(X.shape[0], 5, shuffle=True, random_state=33)
 scores = cross_val_score(clf, X, y, cv=cv)
 print scores

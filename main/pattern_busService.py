@@ -248,6 +248,6 @@ if __name__ == '__main__':
     #===========================================================================
 
     ## Extract bus service using pattern service, compare to labeling data
-    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling'
-    name = 'sgforum_text_labeling.csv'
-    extract_busSvc_labeling(path, name)
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling'
+    # name = 'sgforum_text_labeling.csv'
+    # extract_busSvc_labeling(path, name)
