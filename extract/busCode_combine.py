@@ -35,21 +35,42 @@ def get_stopName(list_stopCode, dict):
 
 if __name__ == '__main__':
     # this function use to combine between bus stop code and bus stop name
+
     # TWITTER
-    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter'
-    stop_name = 'tweet_2015_filtering_busStopName_fix.csv'
-    stop_code = 'tweet_2015_filtering_busStop.csv'
+    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter'
+    # stop_name = 'tweet_2015_filtering_busStopName_fix.csv'
+    # stop_code = 'tweet_2015_filtering_busStop.csv'
+    #
+    # load_stopName = load_file(path_, stop_name)  # load all stop name
+    # # print len(load_stopName)
+    # load_stopCode = load_file(path_, stop_code)[1:]  # load all stop code
+    # # print len(load_stopCode)
+    #
+    # dictionary = stop_dict()
+    # # get the stop name from stop code
+    # list_stopCodeName = get_stopName(load_stopCode, dictionary)
+    # list_all = load_stopName + list_stopCodeName
+    # for value in list_all:
+    #     print value
+    # print len(list_all)
+    # write_file(path_, 'tweet_2015_filtering_busStop_all', list_all)
+
+    # FACEBOOK
+    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews'
+    stop_name = 'facebook_2015_BusNews_filtering_busStopName.csv'
+    stop_code = 'facebook_2015_BusNews_filtering_busStop.csv'
 
     load_stopName = load_file(path_, stop_name)  # load all stop name
     # print len(load_stopName)
-    load_stopCode = load_file(path_, stop_code)[1:]  # load all stop code
+    load_stopCode = load_file(path_, stop_code)  # load all stop code
     # print len(load_stopCode)
 
     dictionary = stop_dict()
     # get the stop name from stop code
     list_stopCodeName = get_stopName(load_stopCode, dictionary)
     list_all = load_stopName + list_stopCodeName
+
     for value in list_all:
         print value
     print len(list_all)
-    # write_file(path_, 'tweet_2015_filtering_busStop_all', list_all)
+    write_file(path_, 'facebook_2015_BusNews_filtering_busStop_all', list_all)

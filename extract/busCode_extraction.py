@@ -7,6 +7,12 @@ from main.loadFile import load_file
 from main.writeFile import write_file
 from extract.road_extraction import match_road
 
+# Guideline for bus stop extraction
+# First, extract bus stop based on the bus stop code
+# Second, extract bus stop based on the bus stop name
+# Merge file bus stop name & code
+# Clean bus stop
+
 
 def convert_busCode(list_busCode):
     list_ = []
