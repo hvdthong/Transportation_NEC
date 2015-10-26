@@ -82,7 +82,7 @@ if __name__ == '__main__':
     name = 'labeling_all.txt'
     list_line_ = load_file(path, name)
     list_convert = filterTxt_CRF(list_line_, command='removePunc')  # remove all punctuation for each token
-    list_convert = filterTxt_CRF(list_line_, command='removeLink')
+    list_convert = filterTxt_CRF(list_line_, command='removeLink')  # remove all punctuations and links
 
     print 'Length of orignial list %i ' % len(list_line_)
     print 'Length of converted list %i ' % len(list_convert)

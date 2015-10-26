@@ -54,9 +54,15 @@ def check_label_crf_lblText(list_line):
         if j % 3 == 1:
             split_second = list_line[j].strip().split('\t')
 
-        for each in split_second:
+        for k in range(0, len(split_second)):
+            each = split_second[k]
             if each not in list_label:
                 list_label.append(each)
+
+            # if each == '':
+            #     print i, split_first
+            #     print j, split_second
+            #     print split_first[k], split_second[k]
     print sorted(list_label)
     return None
 
@@ -477,14 +483,14 @@ if __name__ == '__main__':
     ######################################################################################################
     ######################################################################################################
     # USING FOR TWITTER DATASET
-    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
-    name = 'labeling_all.txt'
-    list_line = filterTxt_CRF(load_file(path, name))
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    # name = 'labeling_all.txt'
+    # list_line = filterTxt_CRF(load_file(path, name))
     # check_label_crf(list_line)
     # check_label_crf_lblText(list_line)
     # check_label_crf(filterTxt_CRF(list_line))
 
-    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features'
+    # path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features'
     # name_tok_bef_road = 'all_token_bef_road'
     # list_tok_bef_road = load_all_dic_token_bef_road_busstop(list_line, command='road')
     # write_file(path_write, name_tok_bef_road, list_tok_bef_road)
@@ -500,3 +506,13 @@ if __name__ == '__main__':
     # name_tok_aft_bussvc = 'all_token_aft_bussvc'
     # list_tok_aft_bussvc = load_all_dic_token_bef_aft_svc(list_line, command='aft_svc')
     # write_file(path_write, name_tok_aft_bussvc, list_tok_aft_bussvc)
+
+    ######################################################################################################
+    ######################################################################################################
+    # USING FOR FACEBOOK DATASET
+    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
+    name = 'label.txt'
+    list_line = filterTxt_CRF(load_file(path, name), command='removePunc')
+    # check_label_crf(list_line)
+    check_label_crf_lblText(list_line)
+    # check_label_crf(filterTxt_CRF(list_line))

@@ -81,7 +81,7 @@ if __name__ == '__main__':
     # command = 'busstop'  # no need to do the stemming
     # road_stop_token(list_line, command, stop)
 
-    stop = []  # no need to use stop words in bus service
+    stop = list()  # no need to use stop words in bus service
     path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data'
     name = 'bus_services.csv'
     list_line = load_file(path, name)
