@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a7ada62-02aa-484a-859c-bf02a699c53d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/CRF_running.py" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/error_analysis.py" afterPath="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/feature_crf.py" afterPath="$PROJECT_DIR$/CRF_labeling/feature_crf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" afterPath="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/load_crf.py" afterPath="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/regularExpression_CRF.py" afterPath="$PROJECT_DIR$/CRF_labeling/regularExpression_CRF.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/CLF_event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/loadFile.py" afterPath="$PROJECT_DIR$/main/loadFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clf_event/load_lbl_event.py" afterPath="$PROJECT_DIR$/clf_event/load_lbl_event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_busService/sgforum_clf.py" afterPath="$PROJECT_DIR$/classification_busService/sgforum_clf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Transportation_NEC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +27,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create_lbl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/create_lbl.py">
+      <file leaf-file-name="load_lbl_event.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clf_event/load_lbl_event.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
               <folding>
-                <element signature="e#25#60#0" expanded="true" />
+                <element signature="e#24#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sgforum_clf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classification_busService/sgforum_clf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+              <folding>
+                <element signature="e#24#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clf_RE.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classification_busService/clf_RE.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="42" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CLF_event.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clf_event/CLF_event.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.75227684">
+              <caret line="72" column="65" selection-start-line="72" selection-start-column="65" selection-end-line="72" selection-end-column="65" />
+              <folding>
+                <element signature="e#24#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +77,47 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_clf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+              <caret line="110" column="30" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter_text.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/filter_text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter_text_v2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/filter_text_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadFile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/loadFile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/sklearn/feature_extraction/text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="775" column="0" selection-start-line="775" selection-start-column="0" selection-end-line="775" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,85 +127,8 @@
         <entry file="file://$PROJECT_DIR$/CRF_labeling/filterText_CRF.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="64" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="64" />
+              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error_analysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_lbl_event.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/clf_event/load_lbl_event.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7647059">
-              <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CRF_running.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_running.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="21" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="21" />
-              <folding>
-                <element signature="e#24#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regularExpression_CRF.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/regularExpression_CRF.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature_crf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-46.172413">
-              <caret line="514" column="32" selection-start-line="514" selection-start-column="12" selection-end-line="514" selection-end-column="32" />
-              <folding>
-                <element signature="e#20066#25426#0" expanded="false" />
-                <element signature="e#25486#27054#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature_crf_all.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="605" column="56" selection-start-line="605" selection-start-column="56" selection-end-line="605" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_crf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/load_crf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="516" column="15" selection-start-line="516" selection-start-column="15" selection-end-line="516" selection-end-column="15" />
-              <folding>
-                <element signature="e#24#59#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -153,8 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extract/road_extraction.py" />
-        <option value="$PROJECT_DIR$/crawl/abbreviation.py" />
         <option value="$PROJECT_DIR$/crawl/abbreviation_busstop.py" />
         <option value="$PROJECT_DIR$/pystruct_pack/ex_iris.py" />
         <option value="C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/models/chain_crf.py" />
@@ -163,7 +156,6 @@
         <option value="C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/models/base.py" />
         <option value="C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/utils/inference.py" />
         <option value="$PROJECT_DIR$/pystruct_pack/linearCRF_ex1.py" />
-        <option value="$PROJECT_DIR$/classification_busService/sgforum_clf.py" />
         <option value="$PROJECT_DIR$/classification_road_busstop/ftr_extraction.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/gt_crf.py" />
         <option value="$PROJECT_DIR$/classification_road_busstop/clf_RE_road_busstop.py" />
@@ -186,7 +178,6 @@
         <option value="$PROJECT_DIR$/pystruct_pack/linearCRF_testmodel.py" />
         <option value="$PROJECT_DIR$/lda_pack/lda_example.py" />
         <option value="$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py" />
-        <option value="$PROJECT_DIR$/clf_event/load_lbl_event.py" />
         <option value="$PROJECT_DIR$/main/extract_bus_info.py" />
         <option value="$PROJECT_DIR$/main/pattern_busService.py" />
         <option value="$PROJECT_DIR$/main/pattern_busCode.py" />
@@ -204,6 +195,10 @@
         <option value="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
+        <option value="$PROJECT_DIR$/clf_event/load_lbl_event.py" />
+        <option value="$PROJECT_DIR$/classification_busService/sgforum_clf.py" />
+        <option value="$PROJECT_DIR$/main/loadFile.py" />
+        <option value="$PROJECT_DIR$/clf_event/CLF_event.py" />
       </list>
     </option>
   </component>
@@ -300,7 +295,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CRF_labeling" />
+              <option name="myItemId" value="classification_busService" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,41 +335,7 @@
       <recent name="D:\PYTHON_CODE\Transportation_NEC\twitterFunc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CRF_running">
-    <configuration default="false" name="load_crf" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="feature_crf_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.CLF_event">
     <configuration default="false" name="CRF_clf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -409,19 +370,53 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="regularExpression_CRF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="load_lbl_event" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clf_event" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/regularExpression_CRF.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clf_event/load_lbl_event.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CLF_event" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clf_event" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Transportation_NEC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clf_event/CLF_event.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="sgforum_clf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classification_busService" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Transportation_NEC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classification_busService/sgforum_clf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -567,19 +562,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.busCode_extraction" />
-      <item index="1" class="java.lang.String" itemvalue="Python.load_crf" />
-      <item index="2" class="java.lang.String" itemvalue="Python.feature_crf_all" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CRF_clf" />
-      <item index="4" class="java.lang.String" itemvalue="Python.CRF_running" />
-      <item index="5" class="java.lang.String" itemvalue="Python.regularExpression_CRF" />
+      <item index="1" class="java.lang.String" itemvalue="Python.CRF_clf" />
+      <item index="2" class="java.lang.String" itemvalue="Python.CRF_running" />
+      <item index="3" class="java.lang.String" itemvalue="Python.load_lbl_event" />
+      <item index="4" class="java.lang.String" itemvalue="Python.CLF_event" />
+      <item index="5" class="java.lang.String" itemvalue="Python.sgforum_clf" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CRF_running" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CRF_clf" />
-        <item index="2" class="java.lang.String" itemvalue="Python.regularExpression_CRF" />
-        <item index="3" class="java.lang.String" itemvalue="Python.feature_crf_all" />
-        <item index="4" class="java.lang.String" itemvalue="Python.load_crf" />
+        <item index="0" class="java.lang.String" itemvalue="Python.CLF_event" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sgforum_clf" />
+        <item index="2" class="java.lang.String" itemvalue="Python.load_lbl_event" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CRF_running" />
+        <item index="4" class="java.lang.String" itemvalue="Python.CRF_clf" />
       </list>
     </recent_temporary>
   </component>
@@ -610,10 +605,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14552239" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14552239" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30054054" sideWeight="0.50416666" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -694,79 +689,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="372" />
+      <option name="time" value="386" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="31" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="31" />
-          <folding>
-            <element signature="e#24#59#0" expanded="false" />
-            <element signature="e#20066#25426#0" expanded="false" />
-            <element signature="e#25486#27054#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/models/crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/models/chain_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/learners/subgradient_ssvm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/models/graph_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/utils/inference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/learners/frankwolfe_ssvm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="296" column="0" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pystruct-0.2.3-py2.7-win-amd64.egg/pystruct/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Research_Group/feature_selection/pearson_correlation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29276693">
@@ -788,32 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/filter_text_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nltk_pack/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nltk_pack/sentence_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -838,25 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/loadFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pystruct_pack/linearCRF_ex2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/filter_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -871,13 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -992,16 +875,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
-            <element signature="e#24#59#0" expanded="true" />
+            <element signature="e#24#59#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="153" column="19" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,7 +885,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding>
-            <element signature="e#24#59#0" expanded="true" />
+            <element signature="e#24#59#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1020,7 +895,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="516" column="15" selection-start-line="516" selection-start-column="15" selection-end-line="516" selection-end-column="15" />
           <folding>
-            <element signature="e#24#59#0" expanded="true" />
+            <element signature="e#24#59#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1030,34 +905,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
-            <element signature="e#25#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="605" column="56" selection-start-line="605" selection-start-column="56" selection-end-line="605" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/filterText_CRF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="64" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-46.172413">
-          <caret line="514" column="32" selection-start-line="514" selection-start-column="12" selection-end-line="514" selection-end-column="32" />
-          <folding>
-            <element signature="e#20066#25426#0" expanded="false" />
-            <element signature="e#25486#27054#0" expanded="false" />
+            <element signature="e#25#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1070,21 +918,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_clf.py">
+    <entry file="file://$PROJECT_DIR$/nltk_pack/sentence_detection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_running.py">
+    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="21" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#77#0" expanded="true" />
-          </folding>
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification_road_busstop/clf_RE_road_busstop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification_road_busstop/clf_road_busstop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification_busService/ftr_bussvc_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification_busService/his_svc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,11 +982,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="605" column="56" selection-start-line="605" selection-start-column="56" selection-end-line="605" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="19" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_running.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="41" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#77#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#20066#25426#0" expanded="false" />
+            <element signature="e#25486#27054#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/cross_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="775" column="0" selection-start-line="775" selection-start-column="0" selection-end-line="775" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/filterText_CRF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/filter_text_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/filter_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/loadFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification_busService/sgforum_clf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+          <folding>
+            <element signature="e#24#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification_busService/clf_RE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="42" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_clf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="30" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clf_event/load_lbl_event.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7647059">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clf_event/CLF_event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75227684">
+          <caret line="72" column="65" selection-start-line="72" selection-start-column="65" selection-end-line="72" selection-end-column="65" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,6 @@
 __author__ = 'vdthoang'
 from main.loadFile import load_file
+from main.writeFile import write_file
 
 
 def clean_quote(string):
@@ -41,10 +42,63 @@ def loading_event(list_lbl, number):
     return list_
 
 
+########################################################################################################
+########################################################################################################
+def get_sentence(list_sents, number):
+    # get the number of sentences
+    list_get = list()
+    cnt = 1
+    for sent in list_sents:
+        list_get.append(sent)
+        if cnt == 3000:
+            break
+        else:
+            cnt += 1
+    return list_get
+
+
+def give_lable_sents(sents, event):
+    list_label = list()
+
+    for sent in sents:
+        flag = False
+        split_sent = sent.lower().split('\t')
+
+        if len(split_sent) > 1:
+            for i in range(1, len(split_sent)):
+                split_label = split_sent[i].split(':')
+                if event == split_label[0]:
+                    flag = True
+
+            if flag is True:
+                list_label.append(event + '\t' + '1' + '\t' + split_sent[0].lower())
+            else:
+                list_label.append(event + '\t' + '0' + '\t' + split_sent[0].lower())
+        else:
+            list_label.append(event + '\t' + '0' + '\t' + split_sent[0].lower())
+    return list_label
+
+
+def create_lbl_detectEvent(path_, list_lbl, events, number):
+    list_sents = get_sentence(list_lbl, number)
+    for event in events:
+        list_lbl_event = give_lable_sents(list_sents, event)
+        write_file(path_, event, list_lbl_event)
+        print event, len(list_lbl_event)
+
+
 if __name__ == '__main__':
+    # TWITTER
     path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event'
     name_ = 'Philips_twitter_labeled3000.txt'
 
     list_lbl = load_file(path_, name_)
-    list_event = loading_event(list_lbl, 3000)
-    statis_lbl(list_event)
+
+    # loading the distribution of each events
+    # list_event = loading_event(list_lbl, 3000)
+    # statis_lbl(list_event)
+
+    # using to create a label for running classification
+    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents'
+    events = ['missing', 'delay']
+    create_lbl_detectEvent(path_write, list_lbl, events, number=3000)

@@ -161,7 +161,7 @@ def check_reg(svc, text, list_sv):
 
 
 def extend_clf_with_reg(list_text, list_sv, clf, K):
-    list_new_text = []
+    list_new_text = list()
     for element in list_text:
         split_element = element.split('\t')
         index = split_element[0]

@@ -4,7 +4,7 @@ Created on 22 Jul 2015
 @author: vdthoang
 '''
 def load_file(path, name):
-    list_ = []
+    list_ = list()
     with open(path + '/' + name) as f:
         for line in f:
             list_.append(line.strip())
