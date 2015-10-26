@@ -110,6 +110,24 @@ if __name__ == '__main__':
     # # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
     # get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
 
+    # ############################################################################
+    # # use for removing all punctuation and link
+    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    # name_clf = 'results_LR_rmLink_twitter.txt'
+    # name_crf = 'results_CRF_rmLink_twitter.txt'
+    # name_file = 'labeling_all.txt'
+    #
+    # list_clf = load_results_clf(load_file(path_, name_clf))
+    # list_crf = load_results_CRF(load_file(path_, name_crf))
+    # list_word = load_text(filterTxt_CRF(load_file(path_, name_file), command='removeLink'))
+    #
+    # # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
+    # get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
+
+    ############################################################################
+    ############################################################################
+    # USING FOR FACEBOOK DATASET
+
     ############################################################################
     # use for removing all punctuation and link
     path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
@@ -120,6 +138,6 @@ if __name__ == '__main__':
     list_clf = load_results_clf(load_file(path_, name_clf))
     list_crf = load_results_CRF(load_file(path_, name_crf))
     list_word = load_text(filterTxt_CRF(load_file(path_, name_file), command='removeLink'))
-    #
-    # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
-    get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
+
+    get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
+    # get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)

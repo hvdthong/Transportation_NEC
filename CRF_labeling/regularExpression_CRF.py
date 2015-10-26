@@ -72,6 +72,8 @@ def loading_reg_ftr(list_line_, command):
         path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF/crf_features/features'
     elif command == 'twitter':
         path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features/features_rmLink'
+    elif command == 'facebook':
+        path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features/features'
     else:
         print 'You need to give the correct command'
         quit()
@@ -95,7 +97,13 @@ if __name__ == '__main__':
     # loading_reg_ftr(list_line, command='sgforums')
 
     # TWITTER
-    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
-    name_ = 'labeling_all.txt'
-    list_line = convert_list_CRF(load_target_label(filterTxt_CRF(load_file(path_, name_), command='removeLink')))
-    loading_reg_ftr(list_line, command='twitter')
+    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    # name_ = 'labeling_all.txt'
+    # list_line = convert_list_CRF(load_target_label(filterTxt_CRF(load_file(path_, name_), command='removeLink')))
+    # loading_reg_ftr(list_line, command='twitter')
+
+    # FACEBOOK
+    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
+    name_ = 'label.txt'
+    list_line = convert_list_CRF(load_target_label(filterTxt_CRF(load_file(path_, name_), command='removePunc')))
+    loading_reg_ftr(list_line, command='facebook')

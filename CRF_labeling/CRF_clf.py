@@ -97,9 +97,9 @@ def confusion_matrix_clf_CRF(y_test, y_pred):
 
 
 def write_results_clf(list_index, y_test, y_pred):
-    list_write = []
+    list_write = list()
     for i in range(0, len(list_index)):
-        list_ = []
+        list_ = list()
         index, pred, test = list_index[i], y_pred[i], y_test[i]
         list_.append(index)
         list_.append(pred)
@@ -111,7 +111,7 @@ def write_results_clf(list_index, y_test, y_pred):
 def n_cross_valid_clf_CRF(X, Y, clf, K, command):
     cv = KFold(len(X), K, shuffle=True, random_state=0)
     if command == 'write_results':
-        list_write = []
+        list_write = list()
     for traincv, testcv in cv:
         x_train, x_test = X[traincv], X[testcv]
         y_train, y_test = Y[traincv], Y[testcv]
@@ -192,26 +192,51 @@ if __name__ == '__main__':
     # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
 
     #################################################################################################
+    # TWITTER
     # loading CRF features, remember that we only remove all punctuation and links in Twitter
-    path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features/features_rmLink'
+    # path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features/features_rmLink'
+    # files_ = folder_files(path_ftr)
+    # features = featuers_CRF(files_, path_ftr)
+    # X = np.array(convert_ftr_x_clf(features))
+    # print len(X)
+    #
+    # # loading target labels
+    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    # name_ = 'labeling_all.txt'
+    # list_line_ = filterTxt_CRF(load_file(path_, name_), 'removeLink')  # remove all punctuations
+    # label_distribution(list_line_)  # get the distribution of labeling in Twitter
+    # Y = np.array(convert_frt_y_clf(list_line_))
+    # print len(Y)
+    # print 'Loading the target labels ------------------------------------'
+    #
+    # # clf = MultinomialNB()
+    # # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
+    # clf = LogisticRegression()
+    # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
+    # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
+
+    #################################################################################################
+    # FACEBOOK
+    # loading CRF features, remember that we only remove all punctuation and links in Facebook
+    path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features/features'
     files_ = folder_files(path_ftr)
     features = featuers_CRF(files_, path_ftr)
     X = np.array(convert_ftr_x_clf(features))
     print len(X)
 
     # loading target labels
-    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
-    name_ = 'labeling_all.txt'
-    list_line_ = filterTxt_CRF(load_file(path_, name_), 'removeLink')  # remove all punctuations
-    label_distribution(list_line_)  # get the distribution of labeling in Twitter
+    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
+    name_ = 'label.txt'
+    list_line_ = filterTxt_CRF(load_file(path_, name_), 'removePunc')  # remove all punctuations
+    label_distribution(list_line_)  # get the distribution of labeling in Facebook
     Y = np.array(convert_frt_y_clf(list_line_))
     print len(Y)
     print 'Loading the target labels ------------------------------------'
 
     # clf = MultinomialNB()
-    # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
+    # clf = svm.LinearSVC(C=1.0, random_state=2500, class_weight='auto')
     clf = LogisticRegression()
     # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
     # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
     n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
-

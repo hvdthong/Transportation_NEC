@@ -514,5 +514,22 @@ if __name__ == '__main__':
     name = 'label.txt'
     list_line = filterTxt_CRF(load_file(path, name), command='removePunc')
     # check_label_crf(list_line)
-    check_label_crf_lblText(list_line)
-    # check_label_crf(filterTxt_CRF(list_line))
+    # check_label_crf_lblText(list_line)
+
+    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features'
+
+    # name_tok_bef_road = 'all_token_bef_road'
+    # list_tok_bef_road = load_all_dic_token_bef_road_busstop(list_line, command='road')
+    # write_file(path_write, name_tok_bef_road, list_tok_bef_road)
+
+    # name_tok_bef_busstop = 'all_token_bef_busstop'
+    # list_tok_bef_busstop = load_all_dic_token_bef_road_busstop(list_line, command='busstop')
+    # write_file(path_write, name_tok_bef_busstop, list_tok_bef_busstop)
+
+    # name_tok_bef_bussvc = 'all_token_bef_bussvc'
+    # list_tok_bef_bussvc = load_all_dic_token_bef_aft_svc(list_line, command='bef_svc')
+    # write_file(path_write, name_tok_bef_bussvc, list_tok_bef_bussvc)
+
+    # name_tok_aft_bussvc = 'all_token_aft_bussvc'
+    # list_tok_aft_bussvc = load_all_dic_token_bef_aft_svc(list_line, command='aft_svc')
+    # write_file(path_write, name_tok_aft_bussvc, list_tok_aft_bussvc)

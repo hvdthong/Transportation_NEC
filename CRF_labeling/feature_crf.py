@@ -35,17 +35,20 @@ def load_dict(command):
         name = 'dict_road.txt'
         list_road = load_file(path, name)
         return list_road
-    elif command == 'busstop':
+    elif command == 'busstop':  # only contains bus stop name
         name = 'dict_busstop.txt'
         list_stop = load_file(path, name)
         return list_stop
-
+    elif command == 'busstopCode':
+        name = 'dict_busstopCode.txt'
+        list_stop = load_file(path, name)
+        return list_stop
     return 'You need to give correct command'
 
 
 def match_dict(list_line, command):
     # matching the dictionary for type: 'service', 'road', 'bus stop'
-    list_ftr = []
+    list_ftr = list()
     for i in range(0, len(list_line), 3):
         split_first = 0
         split_second = 0
@@ -81,6 +84,16 @@ def match_dict(list_line, command):
             list_busstop = load_dict(command)
             for value in split_first:
                 if value.strip().lower() in list_busstop:
+                    feature += '1'
+                else:
+                    feature += '0'
+            # print len(split_first), split_first
+            # print len(feature), feature
+            list_ftr.append(feature)
+        elif command == 'busstopCode':
+            list_busstopCode = load_dict(command)
+            for value in split_first:
+                if value.strip().lower() in list_busstopCode:
                     feature += '1'
                 else:
                     feature += '0'
