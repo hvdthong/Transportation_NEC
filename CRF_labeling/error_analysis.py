@@ -42,7 +42,7 @@ def load_results_CRF(list_crf):
 
 
 def load_text(list_line):
-    list_word = []
+    list_word = list()
     cnt = 0
     for i in range(0, len(list_line), 3):
         split_first = 0
@@ -124,20 +124,21 @@ if __name__ == '__main__':
     # # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
     # get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
 
+
     ############################################################################
     ############################################################################
     # USING FOR FACEBOOK DATASET
-
     ############################################################################
     # use for removing all punctuation and link
-    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
-    name_clf = 'results_LR_rmLink_twitter.txt'
-    name_crf = 'results_CRF_rmLink_twitter.txt'
-    name_file = 'labeling_all.txt'
+    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
+    name_clf = 'results_LR.txt'  # results of classification
+    name_crf = 'results_CRF.txt'  # results of CRF
+    name_file = 'label.txt'
 
     list_clf = load_results_clf(load_file(path_, name_clf))
     list_crf = load_results_CRF(load_file(path_, name_crf))
-    list_word = load_text(filterTxt_CRF(load_file(path_, name_file), command='removeLink'))
+    # In Twitter, we used 'removeLink' but we need to used 'removePunc' in Facebook
+    list_word = load_text(filterTxt_CRF(load_file(path_, name_file), command='removePunc'))
 
-    get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
-    # get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)
+    # get_CRFwrong_CLFright(list_crf[0], list_clf[0], list_crf[1], list_word)
+    get_CRFright_CLFwrong(list_crf[0], list_clf[0], list_crf[1], list_word)

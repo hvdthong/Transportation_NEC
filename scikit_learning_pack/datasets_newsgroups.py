@@ -93,4 +93,8 @@ print cons_ftr
 # for value in data_cntVec.vocabulary_:
 #     print value
 
+cv = CountVectorizer(vocabulary=['hot', 'cold', 'old'])
+cv = cv.fit_transform(['pease porridge hot hot', 'pease porridge cold hot old', 'pease porridge in the pot', 'nine days old']).toarray()
+print cv
+
 

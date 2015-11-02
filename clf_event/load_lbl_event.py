@@ -35,6 +35,7 @@ def loading_event(list_lbl, number):
             for each in labeling:
                 list_.append(clean_quote(each.strip()))
                 # print number, clean_quote(each.strip()), split_value[0]
+
         cnt += 1
         if cnt == number:
             break
@@ -50,7 +51,7 @@ def get_sentence(list_sents, number):
     cnt = 1
     for sent in list_sents:
         list_get.append(sent)
-        if cnt == 3000:
+        if cnt == number:
             break
         else:
             cnt += 1
@@ -90,15 +91,28 @@ def create_lbl_detectEvent(path_, list_lbl, events, number):
 if __name__ == '__main__':
     # TWITTER
     path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event'
-    name_ = 'Philips_twitter_labeled3000.txt'
-
-    list_lbl = load_file(path_, name_)
+    # name_ = 'Philips_twitter_labeledComplete_ver2.txt'
 
     # loading the distribution of each events
-    # list_event = loading_event(list_lbl, 3000)
+    # list_lbl = load_file(path_, name_)
+    # list_event = loading_event(list_lbl, len(list_lbl))
     # statis_lbl(list_event)
 
     # using to create a label for running classification
-    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents'
-    events = ['missing', 'delay']
-    create_lbl_detectEvent(path_write, list_lbl, events, number=3000)
+    # path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents'
+    # events = ['missing', 'delay']
+    # create_lbl_detectEvent(path_write, list_lbl, events, number=3000)
+
+    # # using to create a label for running classification
+    # path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents/allTweets'
+    # name_ = 'Philips_twitter_labeledComplete.txt'
+    # list_lbl = load_file(path_, name_)
+    # events = ['missing', 'delay']
+    # create_lbl_detectEvent(path_write, list_lbl, events, number=len(list_lbl))
+
+    # # using to create a label for running classification
+    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents/allTweets_ver2'
+    name_ = 'Philips_twitter_labeledComplete_ver2.txt'
+    list_lbl = load_file(path_, name_)
+    events = ['missing', 'wait', 'slow']
+    create_lbl_detectEvent(path_write, list_lbl, events, number=len(list_lbl))

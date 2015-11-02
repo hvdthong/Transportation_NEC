@@ -5,7 +5,7 @@ from CRF_labeling.feature_crf import load_target_label, construct_ftr_CRF, metri
 import numpy as np
 from sklearn.linear_model import SGDClassifier, LogisticRegression
 from sklearn import metrics, svm
-from sklearn.cross_validation import KFold
+from sklearn.cross_validation import KFold, StratifiedKFold
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import confusion_matrix
 from operator import itemgetter
@@ -110,6 +110,7 @@ def write_results_clf(list_index, y_test, y_pred):
 
 def n_cross_valid_clf_CRF(X, Y, clf, K, command):
     cv = KFold(len(X), K, shuffle=True, random_state=0)
+    # cv = StratifiedKFold(Y, n_folds=K, random_state=0, shuffle=False)
     if command == 'write_results':
         list_write = list()
     for traincv, testcv in cv:
@@ -236,7 +237,7 @@ if __name__ == '__main__':
 
     # clf = MultinomialNB()
     # clf = svm.LinearSVC(C=1.0, random_state=2500, class_weight='auto')
-    clf = LogisticRegression()
-    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
+    clf = LogisticRegression(class_weight='auto')
+    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
     # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
-    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix

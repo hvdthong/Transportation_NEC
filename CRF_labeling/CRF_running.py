@@ -101,6 +101,8 @@ if __name__ == '__main__':
     X = np.array(construct_ftr_CRF(features))  # construct the features for CRF
     print 'Finish loading features for CRF'
 
+    print X
+
     # loading target labels
     path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
     name_ = 'label.txt'
@@ -108,10 +110,12 @@ if __name__ == '__main__':
     Y = np.array(load_target_label(list_line_))
     print 'Finish loading target label'
 
+    print Y
+
     # running CRF models
     # n_cross_valid_crf(X, Y, K=5, command='metrics_F1')  # use to calculate the F1 for classification
     # n_cross_valid_crf(X, Y, K=5, command='confusion_matrix')  # use to calculate the F1 for classification
-    n_cross_valid_crf(X, Y, K=5, command='write_results')  # use to calculate the confusion matrix
-
-    stop = timeit.default_timer()
-    print 'Finish running CRF model %.3f sec' % (stop - start)
+    # n_cross_valid_crf(X, Y, K=5, command='write_results')  # use to calculate the confusion matrix
+    #
+    # stop = timeit.default_timer()
+    # print 'Finish running CRF model %.3f sec' % (stop - start)
