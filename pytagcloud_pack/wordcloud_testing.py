@@ -28,17 +28,24 @@ from main.loadFile import load_file
 # plt.show()
 
 # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features'
-# # name = 'all_token_bef_bussvc.csv'
-# # name = 'all_token_bef_road.csv'
-# name = 'all_token_bef_busstop.csv'
-
-path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF/crf_features'
 # name = 'all_token_bef_bussvc.txt'
 # name = 'all_token_bef_road.txt'
-name = 'all_token_bef_busstop.txt'
-split_name = name.split('.')
-name_write = split_name[0]
+# name = 'all_token_bef_busstop.txt'
+
+# path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_CRF/crf_features'
+# name = 'all_token_bef_bussvc.txt'
+# name = 'all_token_bef_road.txt'
+# name = 'all_token_bef_busstop.txt'
+# split_name = name.split('.')
+# name_write = split_name[0]
+# list_text = load_file(path, name)
+
+path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features'
+# name = 'all_token_bef_bussvc.csv'
+# name = 'all_token_bef_road.csv'
+name = 'all_token_bef_busstop.csv'
 list_text = load_file(path, name)
+
 
 text = ''
 length = len(list_text)
@@ -52,7 +59,8 @@ text = text.strip()
 wordcloud = WordCloud(max_words=100, margin=10, background_color='white', stopwords=list()).generate_from_text(text)
 plt.axis("off")
 plt.imshow(wordcloud.recolor(random_state=3))
-plt.savefig(path + '/' + name_write + '.jpg', dpi=500)
+plt.show()
+# plt.savefig(path + '/' + name_write + '.jpg', dpi=500)
 
 
 

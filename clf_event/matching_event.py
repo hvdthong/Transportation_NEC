@@ -5,6 +5,8 @@ from clf_event.CLF_event import load_event_x_y
 from sklearn.metrics import confusion_matrix
 import sys
 import numpy as np
+from main.writeFile import write_file
+from operator import itemgetter
 
 
 # make the default is 'utf-8'
@@ -12,7 +14,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 
-def matching_eventText(X, Y, event):
+def matching_eventText(X, Y, event, call):
     pred = list()
     for value in X:
         if event in value:
@@ -28,6 +30,21 @@ def matching_eventText(X, Y, event):
         print line.strip()
     print '----------------'
 
+    list_print = list()
+    if call == 'PrintPredicted':
+        for index in range(0, len(pred)):
+            tweet, pred_value, truth_value = X[index], pred[index], Y[index]
+            list_ = list()
+            list_.append(index), list_.append(pred_value), list_.append(truth_value), list_.append(tweet)
+            list_print.append(list_)
+
+        list_print = sorted(list_print, key=itemgetter(0))  # sorted list based on index
+        list_write = list()
+        for value in list_print:
+            print str(value[0]) + '\t' + str(value[1]) + '\t' + str(value[2]) + '\t' + str(value[3])
+            list_write.append(str(value[0]) + '\t' + str(value[1]) + '\t' + str(value[2]) + '\t' + str(value[3]))
+        write_file(path, event + '_match', list_write)
+
 
 if __name__ == '__main__':
     # TWITTER
@@ -42,4 +59,4 @@ if __name__ == '__main__':
         print 'Running event: ', event
         list_all = load_event_x_y(list_sentences)
         X, Y = np.array(list_all[0]), np.array(list_all[1])
-        matching_eventText(X, Y, event)
+        matching_eventText(X, Y, event, call='PrintPredicted')

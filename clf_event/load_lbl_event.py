@@ -88,6 +88,10 @@ def create_lbl_detectEvent(path_, list_lbl, events, number):
         print event, len(list_lbl_event)
 
 
+########################################################################################################
+########################################################################################################
+
+
 if __name__ == '__main__':
     # TWITTER
     path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event'

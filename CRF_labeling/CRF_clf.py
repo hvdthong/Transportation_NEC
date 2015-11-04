@@ -238,6 +238,6 @@ if __name__ == '__main__':
     # clf = MultinomialNB()
     # clf = svm.LinearSVC(C=1.0, random_state=2500, class_weight='auto')
     clf = LogisticRegression(class_weight='auto')
-    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
-    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
+    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
     # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
