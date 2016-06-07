@@ -1,17 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a7ada62-02aa-484a-859c-bf02a699c53d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/errorAnalysisEvent.py" />
+    <list default="true" id="b2317d0a-b89e-4475-a206-13a82222da26" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/CLF_event_predicted.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/CLF_one_vs_one.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/CLF_one_vs_one_crossValid.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_POS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_POS_running.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/CRF_SQL_insert.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/CRF_model_pred.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_wordVector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_wordVector_running.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/Event_SQL_insert.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/Event_model_pred.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WordVector/WordVector_gensim.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NEC_oldData/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UBICOMP_2016/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WordVector/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/busTrajectory/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmd_running/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelling_data/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/license/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_live_data/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/accuracy_GT_Sentiment.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/accuracy_annotate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_lib/boxplot.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/bus_arrivalTime.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/busstop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/busstop_time.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawl/bussvc_stop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UBICOMP_2016/checkTweetID.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/chi_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/clean_pred_label.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UBICOMP_2016/clf_event_ubicomp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmd_running_final.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scikit_learning_pack/combineFeatures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/combine_files.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/compareTime_testing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/corrAnalysis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_lib/correlation_heatmap.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/crawling_ela.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/dataMall_busservice.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/dataMall_busstop_realTime.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/datamall_bus_routes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UBICOMP_2016/distinct_dateTime.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/event_correct.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/events_sent.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/extractTweetID.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/filterText_demo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/getTwitter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_lib/histogram.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/hourly_dist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/html_busservice.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/insert_bus_svc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/insert_data_demo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UBICOMP_2016/insert_event_ubicomp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UBICOMP_2016/insert_sentiment_ubicomp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NEC_oldData/json_filter_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelling_data/labelled_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_live_data/licensing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scikit_learning_pack/linearSVC_probScore.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/log_testing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nec_demo/mult_process.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_lib/numba_lib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/pos_tagging.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/precision_topK.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/preprocessText.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/randomTwitter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmd_running/range_date.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/sentiment_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/statistic_FB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/statistical.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scikit_learning_pack/test_csr_matrix.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crawling_dataMall/thread_testing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/tool_text.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/license/tools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/busTrajectory/trajectory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ICWSM_2016/trend_analysis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clf_event/wordVec_clf_event.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WordVector/wordvector_facebook.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WordVector/wordvector_twitter.py" />
+      <change type="DELETED" beforePath="D:\PYTHON_CODE\Transportation_NEC\crawl\abbreviation_busstop.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clf_event/CLF_event.py" afterPath="$PROJECT_DIR$/clf_event/CLF_event.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/CRF_running.py" afterPath="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Transportation_NEC.iml" afterPath="$PROJECT_DIR$/.idea/Transportation_NEC.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawl/abbreviation.py" afterPath="$PROJECT_DIR$/crawl/abbreviation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extract/clean_road_busstop.py" afterPath="$PROJECT_DIR$/extract/clean_road_busstop.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/convertTime.py" afterPath="$PROJECT_DIR$/main/convertTime.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py" afterPath="$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clf_event/errorAnalysisEvent.py" afterPath="$PROJECT_DIR$/clf_event/errorAnalysisEvent.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/extract_tag.py" afterPath="$PROJECT_DIR$/main/extract_tag.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/extract_tag_sql.py" afterPath="$PROJECT_DIR$/main/extract_tag_sql.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/feature_crf.py" afterPath="$PROJECT_DIR$/CRF_labeling/feature_crf.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" afterPath="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/filterText_CRF.py" afterPath="$PROJECT_DIR$/CRF_labeling/filterText_CRF.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/filter_text_v2.py" afterPath="$PROJECT_DIR$/main/filter_text_v2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classification_busService/ftr_bussvc_extraction.py" afterPath="$PROJECT_DIR$/classification_busService/ftr_bussvc_extraction.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pystruct_pack/linearCRF_ex2.py" afterPath="$PROJECT_DIR$/pystruct_pack/linearCRF_ex2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pystruct_pack/linearCRF_testmodel.py" afterPath="$PROJECT_DIR$/pystruct_pack/linearCRF_testmodel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/loadFile.py" afterPath="$PROJECT_DIR$/main/loadFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CRF_labeling/load_crf.py" afterPath="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clf_event/load_lbl_event.py" afterPath="$PROJECT_DIR$/clf_event/load_lbl_event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/load_sql.py" afterPath="$PROJECT_DIR$/main/load_sql.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clf_event/matching_event.py" afterPath="$PROJECT_DIR$/clf_event/matching_event.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pytagcloud_pack/wordcloud_testing.py" afterPath="$PROJECT_DIR$/pytagcloud_pack/wordcloud_testing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/pattern_busPlate.py" afterPath="$PROJECT_DIR$/main/pattern_busPlate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/pattern_busService.py" afterPath="$PROJECT_DIR$/main/pattern_busService.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawl/road.py" afterPath="$PROJECT_DIR$/crawl/road.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extract/road_extraction.py" afterPath="$PROJECT_DIR$/extract/road_extraction.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nltk_pack/sentence_detection.py" afterPath="$PROJECT_DIR$/nltk_pack/sentence_detection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/sql_query.py" afterPath="$PROJECT_DIR$/main/sql_query.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databaseFunc/twitterSeparate.py" afterPath="$PROJECT_DIR$/databaseFunc/twitterSeparate.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/writeFile.py" afterPath="$PROJECT_DIR$/main/writeFile.py" />
+      <change type="MOVED" beforePath="D:\PYTHON_CODE\Transportation_NEC\event_extract\json_filter.py" afterPath="$PROJECT_DIR$/main/json_filter.py" />
     </list>
     <ignored path="Transportation_NEC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,64 +139,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CRF_clf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_clf.py">
+      <file leaf-file-name="pattern_busService.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/pattern_busService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.862068">
-              <caret line="242" column="74" selection-start-line="242" selection-start-column="74" selection-end-line="242" selection-end-column="74" />
-              <folding>
-                <element signature="e#24#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_lbl_event.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/clf_event/load_lbl_event.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79932547">
-              <caret line="121" column="37" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error_analysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CRF_running.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_running.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="18" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="21" />
-              <folding>
-                <element signature="e#24#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="errorAnalysisEvent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clf_event/errorAnalysisEvent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#26#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pytag_testing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pytagcloud_pack/pytag_testing.py">
+      <file leaf-file-name="street_name.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawl/street_name.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -98,45 +159,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CRF_model_cmp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawl/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="365" column="20" selection-start-line="365" selection-start-column="20" selection-end-line="365" selection-end-column="20" />
-              <folding>
-                <element signature="e#24#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wordcloud_testing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pytagcloud_pack/wordcloud_testing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matching_event.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clf_event/matching_event.py">
+      <file leaf-file-name="abbreviation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawl/abbreviation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="road_struct.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawl/road_struct.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="road.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawl/road.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <element signature="e#25#60#0" expanded="true" />
+                <element signature="e#50#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_bsv.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pytagcloud_pack/image_bsv.py">
+      <file leaf-file-name="bussvc_stop.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crawl/bussvc_stop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.88978183">
+              <caret line="72" column="79" selection-start-line="72" selection-start-column="79" selection-end-line="72" selection-end-column="79" />
+              <folding>
+                <element signature="e#24#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extract_tag.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/extract_tag.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convertTime.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/convertTime.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extract_bus_info.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/extract_bus_info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -157,57 +258,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/classification_road_busstop/clf_RE_road_busstop.py" />
-        <option value="$PROJECT_DIR$/classification_road_busstop/clf_road_busstop.py" />
-        <option value="$PROJECT_DIR$/classification_busService/clf_RE.py" />
-        <option value="$PROJECT_DIR$/feature_selection/pearson_correlation.py" />
-        <option value="$PROJECT_DIR$/feature_selection/asdfasdf.py" />
-        <option value="$PROJECT_DIR$/../Research_Group/feature_selection/pearson_correlation.py" />
-        <option value="$PROJECT_DIR$/main/pattern_busPlate.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/feature_token_crf.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/clf_CRF.py" />
-        <option value="$PROJECT_DIR$/main/filter_text.py" />
-        <option value="$PROJECT_DIR$/nltk_pack/sentence_dectection.py" />
-        <option value="$PROJECT_DIR$/nltk_pack/sentence_detection.py" />
-        <option value="$PROJECT_DIR$/pytagcloud_pack/pytag_testing.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/CRF_model_cmp_errorAnalysis.py" />
-        <option value="$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py" />
-        <option value="$PROJECT_DIR$/pystruct_pack/linearCRF_testmodel.py" />
-        <option value="$PROJECT_DIR$/lda_pack/lda_example.py" />
+        <option value="$PROJECT_DIR$/UBICOMP_2016/clf_event_ubicomp.py" />
+        <option value="$PROJECT_DIR$/ICWSM_2016/CLF_event_predicted.py" />
+        <option value="$PROJECT_DIR$/UBICOMP_2016/insert_event.py" />
+        <option value="$PROJECT_DIR$/UBICOMP_2016/insert_event_ubicomp.py" />
+        <option value="$PROJECT_DIR$/distinct_dateTime.py" />
+        <option value="$PROJECT_DIR$/UBICOMP_2016/insert_sentiment_ubicomp.py" />
+        <option value="$PROJECT_DIR$/ICWSM_2016/corrAnalysis.py" />
+        <option value="$PROJECT_DIR$/ICWSM_2016/chi_test.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/thread_testing.py" />
+        <option value="$PROJECT_DIR$/bus_arrivalTime.py" />
+        <option value="$PROJECT_DIR$/main/json_filter.py" />
+        <option value="$PROJECT_DIR$/UBICOMP_2016/distinct_dateTime.py" />
+        <option value="$PROJECT_DIR$/main/json_filter_2.py" />
+        <option value="$PROJECT_DIR$/cmd_running/range_date.py" />
+        <option value="$PROJECT_DIR$/cmd_running/cmd.py" />
+        <option value="$PROJECT_DIR$/cmd.py" />
+        <option value="$PROJECT_DIR$/cmd_running_final_ver2.py" />
+        <option value="$PROJECT_DIR$/NEC_oldData/sgforums_old.py" />
+        <option value="$PROJECT_DIR$/NEC_oldData/json_filter_2.py" />
+        <option value="$PROJECT_DIR$/cmd_running_final.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/dataMall_busservice.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/datamall_bus_routes.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/html_busservice.py" />
+        <option value="$PROJECT_DIR$/scikit_learning_pack/combineFeatures.py" />
         <option value="$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py" />
-        <option value="$PROJECT_DIR$/main/extract_bus_info.py" />
-        <option value="$PROJECT_DIR$/main/pattern_busService.py" />
-        <option value="$PROJECT_DIR$/main/pattern_busCode.py" />
-        <option value="$PROJECT_DIR$/extract/clean_road.py" />
-        <option value="$PROJECT_DIR$/extract/busCode_extraction.py" />
-        <option value="$PROJECT_DIR$/extract/busCode_combine.py" />
-        <option value="$PROJECT_DIR$/extract/clean_road_busstop.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/create_lbl.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/token_dictionary.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/busstop_time.py" />
+        <option value="$PROJECT_DIR$/DeepLearning/WordVector.py" />
+        <option value="$PROJECT_DIR$/DeepLearning/WordVector_example.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/dataMall_busstop_realTime.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/compareTime_testing.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/log_testing.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/bus_arrivalTime.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/crawling_ela.py" />
+        <option value="$PROJECT_DIR$/WordVector/WordVector_gensim.py" />
+        <option value="$PROJECT_DIR$/crawling_dataMall/busstop.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/filterText_CRF.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/load_crf.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/feature_crf.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/regularExpression_CRF.py" />
-        <option value="$PROJECT_DIR$/classification_busService/sgforum_clf.py" />
-        <option value="$PROJECT_DIR$/main/loadFile.py" />
-        <option value="$PROJECT_DIR$/matplot_lib/diriclet_dist.py" />
-        <option value="$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py" />
-        <option value="$PROJECT_DIR$/pystruct_pack/linearCRF_ex1.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/error_analysis.py" />
-        <option value="$PROJECT_DIR$/test_lib/HTMLparser_mechanize.py" />
-        <option value="C:/Python27/Lib/encodings/cp1252.py" />
-        <option value="$PROJECT_DIR$/main/writeFile.py" />
-        <option value="$PROJECT_DIR$/scikit_learning_pack/test_crossValidation.py" />
-        <option value="$PROJECT_DIR$/clf_event/htmlParser.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
         <option value="$PROJECT_DIR$/CRF_labeling/CRF_clf.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/feature_crf_all.py" />
-        <option value="$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py" />
+        <option value="$PROJECT_DIR$/main/loadFile.py" />
+        <option value="$PROJECT_DIR$/CRF_labeling/CRF_wordVec_running.py" />
+        <option value="$PROJECT_DIR$/CRF_labeling/CRF_running.py" />
+        <option value="$PROJECT_DIR$/WordVector/wordvector_twitter.py" />
+        <option value="$PROJECT_DIR$/CRF_labeling/CRF_wordVector.py" />
+        <option value="$PROJECT_DIR$/CRF_labeling/CRF_wordVector_running.py" />
         <option value="$PROJECT_DIR$/clf_event/CLF_event.py" />
-        <option value="$PROJECT_DIR$/clf_event/matching_event.py" />
-        <option value="$PROJECT_DIR$/pytagcloud_pack/wordcloud_testing.py" />
-        <option value="$PROJECT_DIR$/clf_event/errorAnalysisEvent.py" />
-        <option value="$PROJECT_DIR$/clf_event/load_lbl_event.py" />
+        <option value="$PROJECT_DIR$/scikit_learning_pack/test_csr_matrix.py" />
+        <option value="$PROJECT_DIR$/busTrajectory/trajectory.py" />
+        <option value="$PROJECT_DIR$/WordVector/wordvector_facebook.py" />
+        <option value="$PROJECT_DIR$/clf_event/wordVec_clf_event.py" />
+        <option value="$PROJECT_DIR$/main/pattern_busPlate.py" />
+        <option value="$PROJECT_DIR$/crawl/road.py" />
+        <option value="$PROJECT_DIR$/crawl/bussvc_stop.py" />
       </list>
     </option>
   </component>
@@ -219,25 +320,6 @@
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Python</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>PyUnresolvedReferencesInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -258,14 +340,10 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource ProjectPane="true" />
-      <autoscrollFromSource />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-        <subPane subId="Default" />
-      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -295,60 +373,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="clf_event" />
+              <option name="myItemId" value="crawl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
-    <property name="settings.editor.splitter.proportion" value="0.22504893" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="sett&#9;ACTION&#9;ShowSettings&#10;setting&#9;ACTION&#9;ShowSettings" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-  </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;&#10;" module-name="Transportation_NEC" is-module-sdk="true">
-        <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;&#10;" />
-        <option name="myUseModuleSdk" value="true" />
-        <option name="myModuleName" value="Transportation_NEC" />
-      </console-settings>
-    </option>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../license_crf" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PYTHON_CODE\Transportation_NEC\CRF_labeling" />
-      <recent name="D:\PYTHON_CODE\Transportation_NEC\event_extract" />
+      <recent name="D:\PYTHON_CODE\Transportation_NEC\crawling_dataMall" />
+      <recent name="D:\PYTHON_CODE\Transportation_NEC\NEC_oldData" />
+      <recent name="D:\PYTHON_CODE\Transportation_NEC" />
       <recent name="D:\PYTHON_CODE\Transportation_NEC\main" />
-      <recent name="D:\PYTHON_CODE\Transportation_NEC\event_extract\test_lib" />
-      <recent name="D:\PYTHON_CODE\Transportation_NEC\twitterFunc" />
+      <recent name="D:\PYTHON_CODE\Transportation_NEC\UBICOMP_2016" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.wordcloud_testing">
-    <configuration default="false" name="CRF_model_cmp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CRF_labeling" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="matching_event" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.bussvc_stop">
+    <configuration default="false" name="wordVec_clf_event" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -360,58 +411,75 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clf_event/matching_event.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clf_event/wordVec_clf_event.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="CLF_event" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="trajectory" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clf_event" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/busTrajectory" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clf_event/CLF_event.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/busTrajectory/trajectory.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="errorAnalysisEvent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="wordvector_facebook" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clf_event" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WordVector" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clf_event/errorAnalysisEvent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordVector/wordvector_facebook.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="wordcloud_testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="bussvc_stop" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytagcloud_pack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/crawl" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytagcloud_pack/wordcloud_testing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl/bussvc_stop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="road" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/crawl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Transportation_NEC" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl/road.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -538,111 +606,59 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="busCode_extraction" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extract" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Transportation_NEC" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extract/busCode_extraction.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.busCode_extraction" />
-      <item index="1" class="java.lang.String" itemvalue="Python.CRF_model_cmp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.matching_event" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CLF_event" />
-      <item index="4" class="java.lang.String" itemvalue="Python.errorAnalysisEvent" />
-      <item index="5" class="java.lang.String" itemvalue="Python.wordcloud_testing" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.wordVec_clf_event" />
+      <item index="1" class="java.lang.String" itemvalue="Python.trajectory" />
+      <item index="2" class="java.lang.String" itemvalue="Python.wordvector_facebook" />
+      <item index="3" class="java.lang.String" itemvalue="Python.bussvc_stop" />
+      <item index="4" class="java.lang.String" itemvalue="Python.road" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.wordcloud_testing" />
-        <item index="1" class="java.lang.String" itemvalue="Python.errorAnalysisEvent" />
-        <item index="2" class="java.lang.String" itemvalue="Python.matching_event" />
-        <item index="3" class="java.lang.String" itemvalue="Python.CLF_event" />
-        <item index="4" class="java.lang.String" itemvalue="Python.CRF_model_cmp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.bussvc_stop" />
+        <item index="1" class="java.lang.String" itemvalue="Python.road" />
+        <item index="2" class="java.lang.String" itemvalue="Python.wordVec_clf_event" />
+        <item index="3" class="java.lang.String" itemvalue="Python.wordvector_facebook" />
+        <item index="4" class="java.lang.String" itemvalue="Python.trajectory" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_MODE" value="false" />
-    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_INHERITED" />
-  </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\vdthoang\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5a7ada62-02aa-484a-859c-bf02a699c53d" name="Default" comment="" />
-      <created>1438335754096</created>
+      <changelist id="b2317d0a-b89e-4475-a206-13a82222da26" name="Default" comment="" />
+      <created>1452674636056</created>
       <option name="number" value="Default" />
-      <updated>1438335754096</updated>
+      <updated>1452674636056</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14925373" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30054054" sideWeight="0.50416666" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1444563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35714287" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="561" y="57" width="798" height="925" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946696" sideWeight="0.49429038" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31962025" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12260128" sideWeight="0.5213793" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30923247" sideWeight="0.49583334" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12592202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3347548" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29810902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30054054" sideWeight="0.50416666" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34434968" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="561" y="57" width="798" height="925" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31962025" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13006397" sideWeight="0.48387095" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946696" sideWeight="0.49429038" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15245202" sideWeight="0.516129" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2958843" sideWeight="0.49583334" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -659,29 +675,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/graph_gephi/graph_network.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/main/pattern_busPlate.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="337" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/lda_pack/lda_example.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="393" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="394" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/pystruct_pack/linearCRF_ex1.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="396" />
+          <line>67</line>
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -694,26 +690,124 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="416" />
+      <option name="time" value="205" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classification_road_busstop/clf_RE_road_busstop.py">
+    <entry file="file://$PROJECT_DIR$/busTrajectory/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="35" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="35" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classification_road_busstop/clf_road_busstop.py">
+    <entry file="file://$PROJECT_DIR$/main/load_sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classification_busService/ftr_bussvc_extraction.py">
+    <entry file="file://$PROJECT_DIR$/main/sql_query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UBICOMP_2016/checkTweetID.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UBICOMP_2016/clf_event_ubicomp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UBICOMP_2016/insert_event_ubicomp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UBICOMP_2016/insert_sentiment_ubicomp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawling_dataMall/busstop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawling_dataMall/busstop_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawling_dataMall/crawling_ela.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawling_dataMall/compareTime_testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseFunc/facebookFunc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseFunc/merge_schemas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseFunc/twitterFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseFunc/twitterSeparate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawling_dataMall/dataMall_busservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification_busService/sgforum_clf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -727,367 +821,248 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sklearn/cross_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sklearn/feature_extraction/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="775" column="0" selection-start-line="775" selection-start-column="0" selection-end-line="775" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/filter_text_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/filter_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/loadFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classification_busService/sgforum_clf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classification_busService/clf_RE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="42" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sklearn/linear_model/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/sklearn/linear_model/logistic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1018" column="0" selection-start-line="1018" selection-start-column="0" selection-end-line="1018" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/token_creating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="917" column="19" selection-start-line="917" selection-start-column="19" selection-end-line="917" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_iris.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nltk_pack/sentence_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_conf_matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/datasets_newsgroups.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lda_pack/lda_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/lda/lda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="212" column="34" selection-start-line="212" selection-start-column="34" selection-end-line="212" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pystruct_pack/linearCRF_ex2.py">
+    <entry file="file://$PROJECT_DIR$/classification_busService/ftr_bussvc_extraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pystruct_pack/linearCRF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pystruct_pack/linearCRF_ex1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/warnings.py">
+    <entry file="file://$PROJECT_DIR$/ICWSM_2016/CLF_event_predicted.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/bs4/__init__.py">
+    <entry file="file://$PROJECT_DIR$/ICWSM_2016/event_correct.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/ICWSM_2016/hourly_dist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/encodings/cp1252.py">
+    <entry file="file://$PROJECT_DIR$/ICWSM_2016/sentiment_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/writeFile.py">
+    <entry file="file://$PROJECT_DIR$/ICWSM_2016/statistical.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scikit_learning_pack/test_crossValidation.py">
+    <entry file="file://$PROJECT_DIR$/busTrajectory/trajectory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/dirichlet_plots.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/diriclet_dist.py">
+    <entry file="file://$PROJECT_DIR$/clf_event/tool_text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/HTMLparser_mechanize.py">
+    <entry file="file://$PROJECT_DIR$/main/json_filter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clf_event/htmlParser.py">
+    <entry file="file://$PROJECT_DIR$/WordVector/wordvector_twitter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/regularExpression_CRF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/gt_crf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
-          <folding />
+          <caret line="63" column="56" selection-start-line="60" selection-start-column="4" selection-end-line="63" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CRF_labeling/filterText_CRF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="64" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="64" />
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEC_oldData/sgforums_old.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IR_Spectrum_Bug/integrator_T.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1216992">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordVector/wordvector_facebook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_wordVector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clf_event/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clf_event/CLF_one_vs_one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clf_event/CLF_one_vs_one_crossValid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clf_event/wordVec_clf_event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clf_event/htmlParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/extractTweetID.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/pattern_busPlate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/convertTime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_token_crf.py">
+    <entry file="file://$PROJECT_DIR$/main/extract_bus_info.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf_all.py">
+    <entry file="file://$PROJECT_DIR$/crawl/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="632" column="15" selection-start-line="632" selection-start-column="15" selection-end-line="632" selection-end-column="15" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/extract_tag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/pattern_busService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawl/street_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawl/abbreviation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawl/road_struct.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawl/road.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#50#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/feature_crf.py">
+    <entry file="file://$PROJECT_DIR$/crawl/bussvc_stop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="564" column="21" selection-start-line="564" selection-start-column="21" selection-end-line="564" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clf_event/CLF_event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.88978183">
+          <caret line="72" column="79" selection-start-line="72" selection-start-column="79" selection-end-line="72" selection-end-column="79" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/error_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytagcloud_pack/image_bsv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytagcloud_pack/pytag_testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytagcloud_pack/wordcloud_testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_model_cmp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="365" column="20" selection-start-line="365" selection-start-column="20" selection-end-line="365" selection-end-column="20" />
-          <folding>
-            <element signature="e#24#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_running.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRF_labeling/CRF_clf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.862068">
-          <caret line="242" column="74" selection-start-line="242" selection-start-column="74" selection-end-line="242" selection-end-column="74" />
-          <folding>
-            <element signature="e#24#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clf_event/matching_event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clf_event/errorAnalysisEvent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#26#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clf_event/load_lbl_event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79932547">
-          <caret line="121" column="37" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>

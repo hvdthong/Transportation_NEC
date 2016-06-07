@@ -35,6 +35,7 @@ def load_abb(path, name):
     list_all.append(list_word)
     return list_all
 
+
 def pattern_match(word, string):
     pattern_1 = r'.* ' + word + '\\b'
     pattern_2 = r'\b' + word + '\\b'

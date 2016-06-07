@@ -57,6 +57,6 @@ if __name__ == '__main__':
     # path_text = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter'
     # name_text = 'tweet_2015_filtering.csv'
 
-    path_text = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews'
-    name_text = 'sg_fb_biz_feed_BusNews_filtering.csv'
-    road_extract(path_text, name_text, list_road, list_road_original)
+    # path_text = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews'
+    # name_text = 'sg_fb_biz_feed_BusNews_filtering.csv'
+    # road_extract(path_text, name_text, list_road, list_road_original)

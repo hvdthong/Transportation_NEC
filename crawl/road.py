@@ -17,7 +17,7 @@ def trade_bus_road(url, service):
     source_code = requests.get(url)
     plain_text = source_code.text
     
-    soup = BeautifulSoup(plain_text,"html5lib")    
+    soup = BeautifulSoup(plain_text, "html5lib")
     list_street = []
     count = 0
     
@@ -57,4 +57,4 @@ if __name__ == '__main__':
         print (url_service)
         list_all_streets = list_all_streets + trade_bus_road(url_service, service)
         
-    write_file(path_service, 'bus_service_road', list_all_streets)
+    # write_file(path_service, 'bus_service_road', list_all_streets)

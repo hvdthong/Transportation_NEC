@@ -16,7 +16,6 @@ from sklearn.metrics import confusion_matrix
 from operator import itemgetter
 
 
-
 # make the default is 'utf-8'
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -40,9 +39,15 @@ def load_dict(command):
         list_stop = load_file(path, name)
         return list_stop
     elif command == 'busstopCode':
-        name = 'dict_busstopCode.txt'
-        list_stop = load_file(path, name)
+        # name = 'dict_busstopCode.txt'
+        name = 'bus_stop.csv'
+        all_stop = load_file(path, name)
+        list_stop = list()
+        for i in range(1, len(all_stop)):
+            stop = all_stop[i].split('\t')
+            list_stop.append(stop[0])
         return list_stop
+
     return 'You need to give correct command'
 
 
@@ -63,7 +68,7 @@ def match_dict(list_line, command):
         if command == 'svc':
             list_svc = load_dict('svc')
             for value in split_first:
-                if value.strip() in list_svc:
+                if value.strip().lower() in list_svc:
                     feature += '1'
                 else:
                     feature += '0'
@@ -99,6 +104,7 @@ def match_dict(list_line, command):
                     feature += '0'
             # print len(split_first), split_first
             # print len(feature), feature
+            print i / 3
             list_ftr.append(feature)
     # print len(list_ftr)
     return list_ftr
@@ -119,10 +125,20 @@ def isCapitalize(list_line):
 
         feature = ''
         for value in split_first:
-            if value[0].isupper() is True:
-                feature += '1'
-            else:
-                feature += '0'
+
+            # if value[0].isupper() is True:
+            #         feature += '1'
+            # else:
+            #     feature += '0'
+
+            try:
+                if value[0].isupper() is True:
+                    feature += '1'
+                else:
+                    feature += '0'
+            except IndexError:
+                print i, split_first
+                quit()
         # print len(split_first), split_first
         # print len(feature), feature
         list_ftr.append(feature)
@@ -132,7 +148,7 @@ def isCapitalize(list_line):
 #######################################################################################
 #######################################################################################
 # check regular expression for bus service
-def pattern_token_bussvc(token):  # use for each token
+def pattern_token_bussvc(token, command):  # use for each token
     pattern_1 = r'[s][v][0-9]+\b'
     pattern_2 = r'[s][v][0-9]+[A-z]{1}\b'
     pattern_3 = r'[s][v][c][0-9]+[A-z]{1}\b'
@@ -149,22 +165,25 @@ def pattern_token_bussvc(token):  # use for each token
             return True
 
     elif (len(token) >= 3) and (token.lower() in list_svc):
-        return True
+        if command == 'facebook':
+            return False
+        else:
+            return True
 
     else:
         return False
 
 
-def pattern_tokenText_bussvc(token, text):
+def pattern_tokenText_bussvc(token, text, command):
     list_svc = load_dict('svc')
-    list_patt = pattern_bus_service_ver2(text, list_svc)
+    list_patt = pattern_bus_service_ver2(text, list_svc, command)
     if token in list_patt:
         return True
     else:
         return False
 
 
-def reg_bussvc(list_line, n_token):
+def reg_bussvc(list_line, n_token, command):
     # check if the token match the regular expression for bus service or not
     list_ftr = []
     for i in range(0, len(list_line), 3):
@@ -172,7 +191,7 @@ def reg_bussvc(list_line, n_token):
         split_second = 0
 
         if i % 3 == 0:
-            split_first = list_line[i].strip().split('\t')
+            split_first = list_line[i].lower().strip().split('\t')
         j = i + 1
         if j % 3 == 1:
             split_second = list_line[j].strip().split('\t')
@@ -180,22 +199,23 @@ def reg_bussvc(list_line, n_token):
         ftr = ''
         for k in range(0, len(split_first)):
             token = split_first[k].strip()
-            if pattern_token_bussvc(token) is True:
+            if pattern_token_bussvc(token, command) is True:
                 ftr += '1'
             else:
-                range_k = range_text_index(k, len(split_second), n_token)
+                range_k = range_text_index(k, len(split_first), n_token)
                 token_text = ''
                 for m in range(range_k[1], range_k[2] + 1):
                     token_text = token_text + ' ' + split_first[m]
 
                 token_text = token_text.strip()
 
-                if pattern_tokenText_bussvc(token, token_text):
+                if pattern_tokenText_bussvc(token, token_text, command):
                     ftr += '1'
                 else:
                     ftr += '0'
         # print len(split_first), split_first
         # print len(ftr), ftr
+        print i / 3
         list_ftr.append(ftr)
     return list_ftr
 
@@ -231,7 +251,7 @@ def matching(text, command):
     return list_token_element
 
 
-def match_road_busstop(list_line, command):
+def match_road_busstop(list_line, command, num_process, data):
     # match with road and bus stop name
     list_ftr = []
     # start = timeit.default_timer()
@@ -260,9 +280,32 @@ def match_road_busstop(list_line, command):
                 ftr += '0'
         # print len(split_first), split_first
         # print len(ftr), ftr
+        print i / 3, num_process
         list_ftr.append(ftr)
     # stop = timeit.default_timer()
     # print 'Time for running is: %.3f sec' % (stop - start)
+
+    # if data == 'twitter':
+    #     if command == 'road':
+    #         path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data_demo_Dec_2015/twitter/crf_features'
+    #         write_file(path_write, 'ftr_reg_match_road_' + str(num_process), list_ftr)
+    #     elif command == 'busstop':
+    #         path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data_demo_Dec_2015/twitter/crf_features'
+    #         write_file(path_write, 'ftr_reg_match_busstop_' + str(num_process), list_ftr)
+    # elif data == 'sgforums':
+    #     if command == 'road':
+    #         path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data_demo_Dec_2015/sgforums/crf_features'
+    #         write_file(path_write, 'ftr_reg_match_road_' + str(num_process), list_ftr)
+    #     elif command == 'busstop':
+    #         path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data_demo_Dec_2015/sgforums/crf_features'
+    #         write_file(path_write, 'ftr_reg_match_busstop_' + str(num_process), list_ftr)
+    # elif data == 'facebook':
+    #     if command == 'road':
+    #         path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data_demo_Dec_2015/facebook/crf_features'
+    #         write_file(path_write, 'ftr_reg_match_road_' + str(num_process), list_ftr)
+    #     elif command == 'busstop':
+    #         path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data_demo_Dec_2015/facebook/crf_features'
+    #         write_file(path_write, 'ftr_reg_match_busstop_' + str(num_process), list_ftr)
     return list_ftr
 
 
@@ -419,7 +462,6 @@ def construct_ftr_CRF(list_all):
 
         num_list_sentence = np.array(list_ftr_sentence)  # IMPORTANT. We need to convert to array before adding to list
         list_all_sentences.append(num_list_sentence)
-
     return list_all_sentences
 
 

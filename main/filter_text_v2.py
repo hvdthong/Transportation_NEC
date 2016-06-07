@@ -3,7 +3,7 @@ Created on 21 Jul 2015
 
 @author: vdthoang
 '''
-#this will be used to filter the text to extract bus service number for each post on sgforums
+# this will be used to filter the text to extract bus service number for each post on sgforums
 from main.writeFile import write_file
 
 def replace_multiple(string, list_punc):

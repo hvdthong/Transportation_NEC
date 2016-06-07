@@ -37,6 +37,7 @@ def pattern_bus_service(string, list_bus_services):
 
     return list_service
 
+
 def match_bus_service(string, list_bus_services):
     #extract all the bus services number if the token contain in list_bus_services
     #note that the post has to be in the list checkBusServices
@@ -46,6 +47,7 @@ def match_bus_service(string, list_bus_services):
         if (token.upper() in list_bus_services):
                 list_service.append(token)
     return list_service
+
 
 def pattern_services(path, name, list_bus_services, list_posts_checkBusServices):
     list_write = []
@@ -87,10 +89,17 @@ def check_bus_service(token, list_bus_services):
     else:
         return 0 ## it's not a bus service
 
-def pattern_bus_service_ver2(string, list_bus_services):
+def pattern_bus_service_ver2(string, list_bus_services, command):
     # detect if the string contains some sentences like: 'bus 12, 24...'
-    # list_word = ['bus', 'buses', 'service', 'services', 'no', 'svc' , 'sv', 'sv.']  # twitter
-    list_word = ['service', 'services', 'no', 'svc', 'sv', 'sv.']  # sgforums
+    if command == 'twitter':
+        list_word = ['bus', 'buses', 'service', 'services', 'no', 'svc', 'sv', 'sv.']  # twitter
+    elif command == 'sgforums':
+        list_word = ['service', 'services', 'no', 'svc', 'sv', 'sv.']  # sgforums
+    elif command == 'facebook':
+        list_word = ['service', 'services', 'svc', 'sv', 'sv.']  # facebook
+    else:
+        print 'You need to show the correct command'
+        quit()
     new_string = string.replace('and', '').replace('or', '')  # in case string = 'bus 12 and/or 24'
 
     split_string = new_string.strip().split()
@@ -98,9 +107,9 @@ def pattern_bus_service_ver2(string, list_bus_services):
     for index in range(0, len(split_string)):
         token = split_string[index]
 
-        if (token in list_word):
+        if token in list_word:
             while True:
-                if (index < len(split_string) - 1):
+                if index < len(split_string) - 1:
                     index += 1
                     if check_bus_service(split_string[index], list_bus_services) == 0:
                         break

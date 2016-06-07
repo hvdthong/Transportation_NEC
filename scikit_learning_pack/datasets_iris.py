@@ -26,10 +26,11 @@ print X_iris.shape, y_iris.shape
 
 X, y = X_iris[:, :2], y_iris  # get the first two elements in X
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=33)
-print X_train.shape, y_train.shape # X_train is training data & y_train is the label of training data
+print X_train.shape, y_train.shape  # X_train is training data & y_train is the label of training data
 
 scaler = preprocessing.StandardScaler().fit(X_train)  # Standardize the features
 X_train_scaler = scaler.transform(X_train)
+print type(X_train_scaler)
 X_test_scaler = scaler.transform(X_test)
 
 # for i in range(0, len(X_train)):

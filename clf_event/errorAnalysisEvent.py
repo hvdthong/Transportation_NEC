@@ -7,6 +7,8 @@ import sys
 # make the default is 'utf-8'
 reload(sys)
 sys.setdefaultencoding('utf8')
+
+
 def load_eventResult(results):
     all, preds, truths, texts = list(), list(), list(), list()
     for value in results:

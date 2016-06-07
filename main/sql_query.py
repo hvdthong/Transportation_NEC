@@ -5,10 +5,10 @@ Created on 20 Jul 2015
 '''
 import MySQLdb
 
-db = MySQLdb.connect(host="127.0.0.1", # your host, usually localhost
-                     user="root", # your username
-                      passwd="ducthong", # your password
-                      db="sgforums_permanent") # name of the data base
+db = MySQLdb.connect(host="127.0.0.1",  # your host, usually localhost
+                     user="root",  # your username
+                      passwd="ducthong",  # your password
+                      db="sgforums_permanent")  # name of the data base
 
 #  you must create a Cursor object. It will let
 #  you execute all the queries you need

@@ -13,5 +13,5 @@ def twitter_seperate_file(path, name, number):
 if __name__ == '__main__':
     path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter'
     name = 'tweet_2015_filtering.csv'
-    number = 32000 #total size of tweets is: 156971, we separate in to 5 different files
+    number = 32000 # total size of tweets is: 156971, we separate in to 5 different files
     twitter_seperate_file(path, name, number)

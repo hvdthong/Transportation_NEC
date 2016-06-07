@@ -15,11 +15,60 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 
+def convert_sent(line):
+    new_sent = ''
+    for value in line:
+        new_sent += value + '\t'
+    return new_sent.strip()
+
+
+def re_correct_crf_label(list_line, path, name):
+    # only use for twitter dataset
+    # input: the list of crf label, the student label wrong position in excel files => need to delete the wrong position
+    # output: label which in correct position
+
+    list_new = list()
+    for i in range(0, len(list_line), 3):
+        first = 0
+        second = 0
+        if i % 3 == 0:
+            split_first = list_line[i].strip().split('\t')
+            first = len(split_first)
+        j = i + 1
+        if j % 3 == 1:
+            split_second = list_line[j].strip().split('\t')
+            second = len(split_second)
+        print first, second
+
+        if first == second:
+            list_new.append(list_line[i]), list_new.append(list_line[j])
+            list_new.append('')
+        elif first == (second - 3):
+            list_new.append(list_line[i])
+            list_new.append(convert_sent(split_second[:second - 3]))
+            list_new.append('')
+        elif first == (second - 2):
+            list_new.append(list_line[i])
+            list_new.append(convert_sent(split_second[:second - 2]))
+            list_new.append('')
+        elif first == (second - 1):
+            list_new.append(list_line[i])
+            list_new.append(convert_sent(split_second[:second - 1]))
+            list_new.append('')
+        else:
+            list_new.append(list_line[i]), list_new.append(list_line[j])
+            list_new.append('')
+
+    write_file(path, name.replace('.txt', '') + '_new', list_new)
+
+
+######################################################################################################
+######################################################################################################
 def check_label_crf(list_line):
     # check if we label correct or not.
     # In particular, we check if the length of text and label are equal or not
     # if not, print line: 'wrong at index'
-    list_wrong = []
+    list_wrong = list()
     for i in range(0, len(list_line), 3):
         first = 0
         second = 0
@@ -35,8 +84,11 @@ def check_label_crf(list_line):
             print i, first, second
         else:
             list_wrong.append('Wrong at index:' + str(i))
-            print 'Wrong at index:', i
+            print 'Wrong at index:', i + 1
     print ('There are %d wrong lines' % len(list_wrong))
+
+    for value in list_wrong:
+        print value
 
 
 def check_label_crf_lblText(list_line):
@@ -58,6 +110,30 @@ def check_label_crf_lblText(list_line):
             each = split_second[k]
             if each not in list_label:
                 list_label.append(each)
+
+            # if each == '':
+            #     print i, k
+
+            # if each == '10':
+            #     print i, k
+
+            # if each == '11':
+            #     print i, k
+
+            # if each == '20':
+            #     print i, k
+
+            # if each == '22':
+            #     print i, k
+
+            # if each == '30':
+            #     print i, k
+
+            # if each == '33':
+            #     print i, k
+
+            # if each == '5':
+            #     print i, k
 
             # if each == '':
             #     print i, split_first
@@ -510,13 +586,13 @@ if __name__ == '__main__':
     ######################################################################################################
     ######################################################################################################
     # USING FOR FACEBOOK DATASET
-    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
-    name = 'label.txt'
-    list_line = filterTxt_CRF(load_file(path, name), command='removePunc')
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
+    # name = 'label.txt'
+    # list_line = filterTxt_CRF(load_file(path, name), command='removePunc')
     # check_label_crf(list_line)
     # check_label_crf_lblText(list_line)
 
-    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features'
+    # path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features'
 
     # name_tok_bef_road = 'all_token_bef_road'
     # list_tok_bef_road = load_all_dic_token_bef_road_busstop(list_line, command='road')
@@ -533,3 +609,19 @@ if __name__ == '__main__':
     # name_tok_aft_bussvc = 'all_token_aft_bussvc'
     # list_tok_aft_bussvc = load_all_dic_token_bef_aft_svc(list_line, command='aft_svc')
     # write_file(path_write, name_tok_aft_bussvc, list_tok_aft_bussvc)
+
+    ######################################################################################################
+    ######################################################################################################
+    # path = 'D:/PYTHON_CODE/license_crf/training_data'
+    # name = 'twitter_CRF_training.txt'
+    # list_line = filterTxt_CRF(load_file(path, name), 'removePunc', 'twitter')
+    # check_label_crf(load_file(path, name))
+
+    # path = 'D:/PYTHON_CODE/license_crf/training_data'
+    # name = 'twitter_CRF_training.txt'
+    # re_correct_crf_label(load_file(path, name), path, name)
+
+    path = 'D:/PYTHON_CODE/license_crf/training_data'
+    name = 'twitter_CRF_training.txt'
+    check_label_crf(load_file(path, name))
+    # check_label_crf_lblText(load_file(path, name))

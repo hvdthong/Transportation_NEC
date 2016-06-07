@@ -2,15 +2,17 @@ __author__ = 'vdthoang'
 import numpy as np
 from pystruct.models import ChainCRF
 from pystruct.learners import FrankWolfeSSVM
+from sklearn.externals import joblib
+import pickle
 
 x = [[0,0,0,0], [0,1,0,0], [0,0,1,0], [0,1,1,0], [0,0,1,1]]
 x_1 = [[0,0,0,0], [0,1,0,0], [0,0,1,0], [0,1,1,0], [0,0,0,0]]
-print x
-for value in x:
-    print value
+# print x
+# for value in x:
+#     print value
 y = [0, 1, 1, 2, 2]
 y_1 = [0, 1, 1, 2, 2]
-print y
+# print y
 
 list_x, list_y = [], []
 list_x.append(np.array(x))
@@ -25,17 +27,22 @@ ssvm.fit(np.array(list_x), np.array(list_y))
 
 test_x = np.array(list_x)
 test_y = np.array(list_y)
-print np.array(list_x)[0].shape[1]
+# print np.array(list_x)[0].shape[1]
 
 x_test = [[1,0,0,0], [1,0,1,0]]
 list_x_test = list()
 list_x_test.append(x_test)
 
 pred = ssvm.predict(np.array(list_x_test))
-for value in pred:
-    print value
+# for value in pred:
+#     print value
 
-list_ = list()
-list_.append(0)
-list_.append(1)
-print list_
+
+# file_model = pickle.dumps(ssvm)
+# load_model = pickle.loads(file_model)
+joblib.dump(ssvm, 'd:/filename.pkl')
+load_model = joblib.load('d:/filename.pkl')
+output = load_model.predict(np.array(list_x_test))
+
+for value in output:
+    print value

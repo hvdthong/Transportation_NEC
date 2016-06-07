@@ -98,8 +98,6 @@ def load_TextFeature(list_type):
 
 ######################################################################
 ######################################################################
-
-
 def load_bus_svc(load_sv):
     list_sv = []
     for i in range(1, len(load_sv)):  # remove the header of file

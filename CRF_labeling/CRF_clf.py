@@ -19,12 +19,13 @@ def featuers_CRF(files, path):
     for f in files:
         list_f = load_file(path, f)
         list_all.append(list_f)
+        # print f
     return list_all
 
 
 def convert_ftr_x_clf(list_all):  # convert features list
     list_convert = construct_ftr_CRF(list_all)
-    list_ftr_token = []
+    list_ftr_token = list()
 
     for sentence in list_convert:
         for word in sentence:
@@ -34,7 +35,7 @@ def convert_ftr_x_clf(list_all):  # convert features list
 
 def convert_frt_y_clf(list_target):  # convert target label
     list_convert = load_target_label(list_target)
-    list_target = []
+    list_target = list()
 
     for sentence in list_convert:
         for label in sentence:
@@ -45,7 +46,7 @@ def convert_frt_y_clf(list_target):  # convert target label
 #################################################################################################
 #################################################################################################
 def metrics_clf_ftrCRF(y_test, y_pred):  # we know that we have 4 labels
-    num_label = []
+    num_label = list()
     for label in y_test:
         if label not in num_label:
             num_label.append(label)
@@ -161,8 +162,8 @@ if __name__ == '__main__':
     #
     # # clf = MultinomialNB()
     # # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
-    # clf = LogisticRegression()
-    # n_cross_valid_clf_CRF(X, Y, clf, K=5)
+    # clf = LogisticRegression(class_weight='auto')
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')
 
     #################################################################################################
     #################################################################################################
@@ -175,19 +176,19 @@ if __name__ == '__main__':
     # features = featuers_CRF(files_, path_ftr)
     # X = np.array(convert_ftr_x_clf(features))
     # print len(X)
-    #
-    # # loading target labels
+    # #
+    # # # loading target labels
     # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
     # name_ = 'labeling_all.txt'
     # list_line_ = filterTxt_CRF(load_file(path_, name_), 'removePunc')  # remove all punctuations
-    # label_distribution(list_line_)  # get the distribution of labeling in Twitter
+    # # label_distribution(list_line_)  # get the distribution of labeling in Twitter
     # Y = np.array(convert_frt_y_clf(list_line_))
     # print len(Y)
     # print 'Loading the target labels ------------------------------------'
-    #
-    # clf = MultinomialNB()
-    # # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
-    # # clf = LogisticRegression()
+    # #
+    # # clf = MultinomialNB()
+    # # # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
+    # clf = LogisticRegression(class_weight='auto')
     # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
     # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
     # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
@@ -195,49 +196,49 @@ if __name__ == '__main__':
     #################################################################################################
     # TWITTER
     # loading CRF features, remember that we only remove all punctuation and links in Twitter
-    # path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features/features_rmLink'
+    path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF/crf_features/features_rmLink'
+    files_ = folder_files(path_ftr)
+    features = featuers_CRF(files_, path_ftr)
+    X = np.array(convert_ftr_x_clf(features))
+    print len(X)
+    # # #
+    # # # # loading target labels
+    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
+    name_ = 'labeling_all.txt'
+    list_line_ = filterTxt_CRF(load_file(path_, name_), 'removeLink')  # remove all punctuations & links
+    # label_distribution(list_line_)  # get the distribution of labeling in Twitter
+    Y = np.array(convert_frt_y_clf(list_line_))
+    print len(Y)
+    # print 'Loading the target labels ------------------------------------'
+    # # # #
+    # # # # # clf = MultinomialNB()
+    # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
+    # # clf = LogisticRegression(class_weight='auto')
+    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
+    # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
+    # # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
+
+    #################################################################################################
+    # FACEBOOK
+    # loading CRF features, remember that we only remove all punctuation and links in Facebook
+    # path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features/features'
     # files_ = folder_files(path_ftr)
     # features = featuers_CRF(files_, path_ftr)
     # X = np.array(convert_ftr_x_clf(features))
     # print len(X)
     #
     # # loading target labels
-    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_CRF'
-    # name_ = 'labeling_all.txt'
-    # list_line_ = filterTxt_CRF(load_file(path_, name_), 'removeLink')  # remove all punctuations
-    # label_distribution(list_line_)  # get the distribution of labeling in Twitter
+    # path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
+    # name_ = 'label.txt'
+    # list_line_ = filterTxt_CRF(load_file(path_, name_), 'removePunc')  # remove all punctuations
+    # label_distribution(list_line_)  # get the distribution of labeling in Facebook
     # Y = np.array(convert_frt_y_clf(list_line_))
     # print len(Y)
     # print 'Loading the target labels ------------------------------------'
     #
     # # clf = MultinomialNB()
-    # # clf = svm.LinearSVC(C=1.0, random_state=0, class_weight='auto')
-    # clf = LogisticRegression()
-    # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
-    # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
-    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
-
-    #################################################################################################
-    # FACEBOOK
-    # loading CRF features, remember that we only remove all punctuation and links in Facebook
-    path_ftr = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF/crf_features/features'
-    files_ = folder_files(path_ftr)
-    features = featuers_CRF(files_, path_ftr)
-    X = np.array(convert_ftr_x_clf(features))
-    print len(X)
-
-    # loading target labels
-    path_ = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_CRF'
-    name_ = 'label.txt'
-    list_line_ = filterTxt_CRF(load_file(path_, name_), 'removePunc')  # remove all punctuations
-    label_distribution(list_line_)  # get the distribution of labeling in Facebook
-    Y = np.array(convert_frt_y_clf(list_line_))
-    print len(Y)
-    print 'Loading the target labels ------------------------------------'
-
-    # clf = MultinomialNB()
-    # clf = svm.LinearSVC(C=1.0, random_state=2500, class_weight='auto')
-    clf = LogisticRegression(class_weight='auto')
+    # # clf = svm.LinearSVC(C=1.0, random_state=2500, class_weight='auto')
+    # clf = LogisticRegression(class_weight='auto')
     # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='metrics_F1')  # use to calculate the F1 for classification
-    n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
-    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix
+    # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='confusion_matrix')  # use to calculate the confusion matrix
+    # # n_cross_valid_clf_CRF(X, Y, clf, K=5, command='write_results')  # use to calculate the confusion matrix

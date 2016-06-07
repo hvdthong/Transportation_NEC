@@ -52,11 +52,29 @@ if __name__ == '__main__':
     # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents'
     # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents/allTweets'
 
-    events = ['wait', 'slow', 'missing']
-    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents/allTweets_ver2'
+    # events = ['wait', 'slow', 'missing']
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents/allTweets_ver2'
+
+    # events = ['wait', 'missing', 'skip', 'slow', 'accident', 'crowd']
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/twitter/labeling_event/detectAllEvents/allTweets_ver3'
+
+    # FACEBOOK
+    # events = ['wait', 'complaint', 'compliment', 'skip', 'crowd']
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_event/detectAllEvents'
+
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews/labeling_event/detectAllEvents_ver2'
+    # events = ['wait', 'complaint', 'compliment', 'skip', 'suggestion']
+
+    # SGFORUMS
+    # events = ['bunch', 'crowd']
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_classification_events/detectAllEvents'
+
+    events = ['bunch', 'crowd']
+    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/sgforums/20152207_singaporebuses_all_posts/labeling_classification_events/detectAllEvents_ver2'
     for event in events:
         list_sentences = load_file(path, event + '.csv')
         print 'Running event: ', event
-        list_all = load_event_x_y(list_sentences)
+        list_all = load_event_x_y(event, list_sentences, command='preprocessText')
         X, Y = np.array(list_all[0]), np.array(list_all[1])
-        matching_eventText(X, Y, event, call='PrintPredicted')
+        # matching_eventText(X, Y, event, call='PrintPredicted')
+        matching_eventText(X, Y, event, call='')

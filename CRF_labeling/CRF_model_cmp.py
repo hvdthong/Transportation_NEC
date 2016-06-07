@@ -300,12 +300,12 @@ if __name__ == '__main__':
 
     ############################################################################
     # first we need to construct features for Sgforums based on Twitter information
-    # path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/CRFs_compareModel/sgforums/ftr_twitter'
+    path_write = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/CRFs_compareModel/sgforums/ftr_twitter'
     # create_ftrList(path_write, command='twitter_vs_sgforums')
 
     ############################################################################
     # load Twitter data and create CRFs model
-    # create_model_CRFs(command='twitter_vs_sgforums', results='metrics_F1')
+    create_model_CRFs(command='twitter_vs_sgforums', results='metrics_F1')
     # create_model_CRFs(command='twitter_vs_sgforums', results='confusion_matrix')
     # create_model_CRFs(command='twitter_vs_sgforums', results='write_results')
 

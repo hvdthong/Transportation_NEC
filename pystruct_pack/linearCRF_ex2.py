@@ -32,9 +32,18 @@ f_test = features_test
 X_test = [(features_i, np.vstack([np.arange(f_t.shape[0] - 1), np.arange(1, f_t.shape[0])])) for features_i in f_test]
 print 'Loading X_test'
 
+print len(X_train), len(y_train)
+print type(X_train), type(y_train)
+for each in X_train:
+    print len(each)
+
 start = time()
 model = GraphCRF(directed=True, inference_method="max-product")
 ssvm = FrankWolfeSSVM(model=model, C=.1, max_iter=10)
 ssvm.fit(X_train, y_train)
 #
-print 'accuracy of GraphCRF %f:' % ssvm.score(X_test, y_test), ' time spend: %f' % (time()-start)
+# print 'accuracy of GraphCRF %f:' % ssvm.score(X_test, y_test), ' time spend: %f' % (time()-start)
+
+
+
+

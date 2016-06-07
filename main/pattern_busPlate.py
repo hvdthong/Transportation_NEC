@@ -34,6 +34,7 @@ def pattern_busPlate(string):
     
     return list_busPlate
 
+
 def check_busPlate(string):
     #check if bus plate number is author name or not 
     string = string.replace('Originally posted by', '')
@@ -42,6 +43,7 @@ def check_busPlate(string):
     for index in range(1, len(split_str)):
         new_string = new_string + ' ' + split_str[index]
     return new_string.strip()
+
 
 def pattern_plate(path, name):
     list_write = []

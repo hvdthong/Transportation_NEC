@@ -119,8 +119,8 @@ if __name__ == '__main__':
     # table = 'tweet_2015_ver4_stopall'
     # clean_roadName(path, name_write, table)
 
-    path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews'
-    name_write = 'facebook_2015_BusNews_filtering_busStop_all_clean'
-    table = 'facebook_2015_busnews_filtering_busstop_all'
+    # path = 'D:/Project/Transportation_SMU-NEC_collaboration/Data/facebook/BusNews'
+    # name_write = 'facebook_2015_BusNews_filtering_busStop_all_clean'
+    # table = 'facebook_2015_busnews_filtering_busstop_all'
 
     clean_roadName(path, name_write, table)
